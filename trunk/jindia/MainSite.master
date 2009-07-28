@@ -1,0 +1,106 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainSite.master.cs" Inherits="MainSite" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <link id="CSS" type="text/css" title="CSS" rel="stylesheet" href="original/mainhome.css">
+    <link href="original/effects.css" rel="Stylesheet" type="text/css" />
+</head>
+<body style="background: transparent url('original/background.gif') top repeat-x #a59173;">
+    <form id="form1" runat="server">
+        <div id="master_container">
+            <div id="header" style="background: transparent url('original/header_logo_new_l.jpg') 0 33px no-repeat;">
+                <center>
+                </center>
+                <h1>
+                    <a href="main/index.htm">JayahoIndia</a></h1>
+                <h2 style="background-image: url('original/header_grow_new.jpg'); background-repeat: no-repeat;">
+                    Wireless &amp; Voice Serices &amp; Products</h2>
+                <ul id="nav">
+                    <li class="nav1" style="background-image: url('original/nav1.gif');"><a href="default.aspx">
+                        Home</a></li>
+                    <li class="nav2" style="background-image: url('original/nav2.gif');"><a href="/products/index.htm">
+                        Products</a></li>
+                    <li class="nav3" style="background-image: url('original/nav3.gif');"><a href="/services/index.htm">
+                        Services</a></li>
+                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="/about/customers.htm">
+                        Customers</a></li>
+                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="/news/index.htm">
+                        News &amp; Events</a><a href="http://www.techunified.com/case_studies.htm"></a></li>
+                    <li class="nav5" style="background-image: url('original/nav5.gif');"><a href="/about/resources.htm">
+                        Sign Up <em><strong></strong></em></a></li>
+                    <li class="nav6" style="background-image: url('original/nav6.gif');"><a href="/about/index.htm">
+                        About Us <em><strong></strong></em></a></li>
+                </ul>
+            </div>
+            <div id="content" style="background-image: url('original/content_back.gif'); padding-top: 5px;">
+                <%--   <ol id="bmgTabs">
+                    <li>
+                        <h2 id="getStarted">
+                            <a href="http://techunified.com/main/about/index.htm">Get Started</a></h2>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="http://techunified.com/main/products/customerconnect/index.htm" id="dtBuild"
+                                rel="bmgLink" onfocus="this.blur();">dt.Build</a></h2>
+                        <div class="popUp" id="infoBuild" style="opacity: 0.999999;">
+                            <p align="left">
+                                <a href="http://techunified.com/main/products/customerconnect/index.htm">Next Generation</a>
+                                Mobile Banking |<strong> <a href="http://www.techunified.com/files/Customer_Connect_Brochure.pdf">
+                                    Get Brochure </a></strong>
+                            </p>
+                            <a href="http://techunified.com/main/products/customerconnect/index.htm" class="closeLink"
+                                onfocur="this.blur();">More</a></div>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="http://techunified.com/main/products/voiceconnect/index.htm" id="dtMarket"
+                                rel="bmgLink" onfocus="this.blur();">dt.Market</a></h2>
+                        <div class="popUp" id="infoMarket" style="opacity: 0.999999;">
+                            <p>
+                                <a href="http://techunified.com/main/products/voiceconnect/index.htm">Next Generation</a>
+                                Voice &amp; IP Platform| <strong><a href="http://www.techunified.com/files/Voice_Connect_Brochure.pdf">
+                                    Get Brochure </a></strong>
+                            </p>
+                            <a href="http://techunified.com/main/products/voiceconnect/index.htm" class="closeLink"
+                                onfocur="this.blur();">More</a></div>
+                    </li>
+                    <li>
+                        <h2>
+                            <a href="http://techunified.com/main/products/selfconnect/index.htm" id="dtGrow"
+                                rel="bmgLink" onfocus="this.blur();">dt.Grow</a></h2>
+                        <div class="popUp" id="infoGrow" style="opacity: 0.999999;">
+                            <p>
+                                <a href="http://techunified.com/main/products/selfconnect/index.htm">Redefining</a>
+                                Self-Services on the web | <strong><a href="http://www.techunified.com/files/Self%20Connect%20Brochure.pdf">
+                                    Get Brochure </a></strong>
+                            </p>
+                            <div align="right">
+                                <a href="http://techunified.com/main/products/selfconnect/index.htm" class="closeLink"
+                                    onfocur="this.blur();">More</a></div>
+                        </div>
+                    </li>
+                </ol>--%>
+                <div id="body" style="background: transparent url(original/content_top.gif) no-repeat left top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="footer" style="background: transparent url('original/footer_back.gif') left top no-repeat;">
+                <div class="footer_left">
+                    <a href="http://www.companyname.com/">CompanyName</a> <a href="/jobs.html">Careers</a>
+                    <a href="/sitemap.htm">Sitemap</a> <a href="/contact.htm">Offices</a></div>
+                <div class="footer_right">
+                    © 2009 -
+                    <div class="vcard">
+                        <a class="url fn last" href="http://www.jayahoIndia.com/">JayahoIndia</a>
+                        <div class="org">
+                            TechUnified</div>
+                        <a class="email" href="mailto:info@jayahoindia.com">info@ TechUnified.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

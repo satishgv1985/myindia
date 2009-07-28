@@ -1,0 +1,1770 @@
+﻿/* Structural Site Styling */
+
+/* Reference "visual.css" for visual styling of elements */
+
+html {
+
+	margin: 0;
+
+	height: 100%;
+
+	width: 100%;
+
+	text-align: center;
+
+	}
+
+
+
+img {
+
+	border: none;
+
+	}
+
+
+
+div, form, h1, h2, h3, h4, h5, h6 {
+
+	margin: 0;
+
+	padding: 0;
+
+	}
+
+
+
+#master_container {
+
+	position: relative;
+
+	width: 750px;
+
+	margin: 0 auto 0 auto;
+
+	padding: 20px 0 0 0;
+
+	text-align: left;
+
+	}
+
+
+
+#header {
+
+	position: relative;
+
+	width: 100%;
+
+	height: 213px;
+
+	background: url("../images/header_logo.gif") 0 33px no-repeat;
+
+	overflow: hidden;
+
+	}
+
+	
+
+	#header h2 {
+
+		position: absolute;
+
+		top: 36px;
+
+		left: 209px;
+
+		z-index: 100;
+
+		width: 533px;
+
+		height: 0;
+
+		margin: 0;
+
+		padding-top: 169px;
+
+		overflow: hidden;
+
+		}
+
+		#header h2 a {
+
+			position: absolute;
+
+			top: 0;
+
+			left: 0;
+
+			height: 0;
+
+			width: 533px;
+
+			padding-top: 169px;
+
+			overflow: hidden;
+
+			}
+
+	
+
+	#header h1 {
+
+		position: absolute;
+
+		top: 36px;
+
+		left: 8px;
+
+		width: 198px;
+
+		height: 169px;
+
+		overflow: hidden;
+
+		z-index: 200;
+
+		}
+
+		#header h1 a, #header h1 a:link, #header h1 a:visited {
+
+			display: block;
+
+			width: 198px;
+
+			padding-top: 169px;
+
+			overflow: hidden;
+
+			}
+
+	
+
+	ul#nav {
+
+		position: relative;
+
+		width: 750px;
+
+		height: 33px;
+
+		overflow: hidden;
+
+		z-index: 200;
+
+		margin: 0;
+
+		padding: 0;
+
+		}
+
+		ul#nav li {
+
+			list-style-type: none;
+
+			position: relative;
+
+			float: left;
+
+			margin: 0;
+
+			padding: 0;
+
+			height: 33px;
+
+			text-align: center;
+
+			}
+
+			ul#nav li a, ul#nav li a:link, ul#nav li a:visited {
+
+				position: relative;
+
+				display: block;
+
+				padding: 5px 0 0 0;
+
+				font: bold 11px Arial, Helvetica, sans-serif;
+
+				text-decoration: none;
+
+				color: #ffffff;
+
+				height: 28px;
+
+				line-height: 28px;
+
+				}
+
+				ul#nav li.selected a, ul#nav li.selected a:link, ul#nav li.selected a:visited {
+
+					background-position: bottom !important;
+
+					}
+
+			ul#nav li.nav1 a, ul#nav li.nav1 a:link, ul#nav li.nav1 a:visited {
+
+				width: 118px;
+
+				padding-left: 5px;
+
+				background: url("/files/nav1.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav1 a:hover {
+
+					background-position: bottom;
+
+					}
+
+			ul#nav li.nav2 a, ul#nav li.nav2 a:link, ul#nav li.nav2 a:visited {
+
+				width: 100px;
+
+				background: url("/files/nav2.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav2 a:hover {
+
+					background-position: bottom;
+
+					}
+
+			ul#nav li.nav3 a, ul#nav li.nav3 a:link, ul#nav li.nav3 a:visited {
+
+				width: 100px;
+
+				background: url("/files/nav3.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav3 a:hover {
+
+					background-position: bottom;
+
+					}
+
+			ul#nav li.nav4 a, ul#nav li.nav4 a:link, ul#nav li.nav4 a:visited {
+
+				width: 100px;
+
+				background: url("/files/nav4.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav4 a:hover {
+
+					background-position: bottom;
+
+					}
+
+			ul#nav li.nav5 a, ul#nav li.nav5 a:link, ul#nav li.nav5 a:visited {
+
+				width: 100px;
+
+				background: url("/files/nav5.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav5 a:hover {
+
+					background-position: bottom;
+
+					}
+
+			ul#nav li.nav6 a, ul#nav li.nav6 a:link, ul#nav li.nav6 a:visited {
+
+				width: 122px;
+
+				padding-right: 5px;
+
+				background: url("/files/nav6.gif");
+
+				background-position: top;
+
+				}
+
+				ul#nav li.nav6 a:hover {
+
+					background-position: bottom;
+
+					}
+
+
+
+ul#proposalList {
+
+	position: absolute;
+
+	z-index: 200;
+
+	margin: -5px 0 0 3px;
+
+	padding: 10px 10px 15px 10px;
+
+	width: 159px;
+
+	background: url("../images/quotelist_bottom.gif") left bottom no-repeat #e9e5d7;
+
+	}
+
+	ul#proposalList li {
+
+		position: relative;
+
+		margin: 0;
+
+		padding: 0;
+
+		list-style-type: none;
+
+		}
+
+
+
+
+
+#content {
+
+	position: relative;
+
+	width: 100%;
+
+	background: url("../images/content_back.gif") repeat-y;
+
+	}
+
+
+
+	ol#bmgTabs {
+
+		position: relative;
+
+		margin: 0;
+
+		padding: 0;
+
+		background: url("../images/tab_back.gif") no-repeat;
+
+		height: 38px;
+
+		width: 100%;
+
+		z-index: 200;
+
+		}
+
+		ol#bmgTabs li {
+
+			position: relative;
+
+			margin: 0;
+
+			padding: 0;
+
+			float: left;
+
+			list-style-type: none;
+
+			}
+
+			a#dtBuild, a#dtBuild:link, a#dtBuild:visited, a#dtMarket, a#dtMarket:link, a#dtMarket:visited, a#dtGrow, a#dtGrow:link, a#dtGrow:visited {
+
+				position: relative;
+
+				display: block;
+
+				width: 178px;
+
+				height: 0;
+
+				overflow: hidden;
+
+				padding-top: 38px;
+
+				line-height: 38px;
+
+				background-repeat: no-repeat;
+
+				}
+
+			h2#getStarted {
+
+				position: relative;
+
+				margin-left: 16px;
+
+				margin-right: 7px;
+
+				width: 182px;
+
+				height: 0;
+
+				padding-top: 38px;
+
+				overflow: hidden;
+
+				background-image: url("../images/tab_getstarted.gif");
+
+				}
+
+			a#dtBuild, a#dtBuild:link, a#dtBuild:visited {
+
+				background-image: url("../images/tab_dtbuild.gif");
+
+				background-position: 0 0;
+
+				}
+
+			a#dtBuild:hover {
+
+				background-position: 0 -38px;
+
+				}
+
+			a#dtMarket, a#dtMarket:link, a#dtMarket:visited {
+
+				background-image: url("../images/tab_dtmarket.gif");
+
+				background-position: 0 0;
+
+				}
+
+			a#dtMarket:hover {
+
+				background-position: 0 -38px;
+
+				}
+
+			a#dtGrow, a#dtGrow:link, a#dtGrow:visited {
+
+				background-image: url("../images/tab_dtgrow.gif");
+
+				background-position: 0 0;
+
+				}
+
+			a#dtGrow:hover {
+
+				background-position: 0 -38px;
+
+				}
+
+			
+
+			div.popUp {
+
+				position: absolute;
+
+				left: 5px;
+
+				width: 168px;
+
+				height: 80px;
+
+				padding: 0 0 30px 0;
+
+				background-image: url("../images/bmg_back.gif");
+
+				}
+
+				div.popUp a.closeLink, div.popUp a.closeLink:link, div.popUp a.closeLink:visited {
+
+					position: absolute;
+
+					bottom: 5px;
+
+					left: 0;
+
+					width: 100%;
+
+					display: block;
+
+					text-align: center;
+
+					text-decoration: none;
+
+					font-weight: bold;
+
+					}
+
+					div.popUp a.closeLink:hover {
+
+						text-decoration: underline;
+
+						}
+
+				div.popUp p {
+
+					position: relative;
+
+					padding: 10px 15px 0 15px;
+
+					margin: 0;
+
+					background-image: url("../images/bmg_back.gif");
+
+					}
+
+				#infoBuild {
+
+					background-position: left bottom;
+
+					}
+
+					#infoBuild p {
+
+						background-position: left top;
+
+						}
+
+				#infoMarket {
+
+					background-position: center bottom;
+
+					}
+
+					#infoMarket p {
+
+						background-position: center top;
+
+						}
+
+				#infoGrow {
+
+					background-position: right bottom;
+
+					}
+
+					#infoGrow p {
+
+						background-position: right top;
+
+						}
+
+				
+
+				
+
+
+
+#body {
+
+	position: relative;
+
+	width: 100%;
+
+	padding: 10px 0 10px 0;
+
+	z-index: 100;
+
+	clear: both;
+
+	background: url("../images/content_top.gif") left top no-repeat;
+
+	overflow: hidden;
+
+	}
+
+	
+
+	#col_left {
+
+		position: relative;
+
+		width: 185px;
+
+		padding: 0 5px 0 15px;
+
+		float: left;
+
+		overflow: hidden;
+
+		}
+
+		
+
+		h3.display a, h3.display a:link, h3.display a:visited {
+
+			position: relative;
+
+			display: block;
+
+			overflow: hidden;
+
+			width: 158px;
+
+			height: 0;
+
+			margin: 0;
+
+			padding: 38px 0 0 0;
+
+			background-position: 0 0;
+
+			}
+
+			h3.display a:hover {
+
+				background-position: 0 38px;
+
+				}
+
+				h3#buildNav a, h3#buildNav a:link, h3#buildNav a:visited {
+
+					background-image: url("/files/nav_build.gif");
+
+					}
+
+				h3#marketNav a, h3#marketNav a:link, h3#marketNav a:visited {
+
+					background-image: url("/files/nav_market.gif");
+
+					}
+
+				h3#growNav a, h3#growNav a:link, h3#growNav a:visited {
+
+					background-image: url("/files/nav_grow.gif");
+
+					}
+
+				h3#growNav2 a, h3#growNav2 a:link, h3#growNav2 a:visited {
+
+					background-image: url("../images/abouttab.gif");
+
+					}
+
+				h3#growNav3 a, h3#growNav3 a:link, h3#growNav3 a:visited {
+
+					background-image: url("../images/servtab.gif");
+
+					}
+
+			.stretcher {
+
+				display: none;
+
+				}
+
+		
+
+			.stretcher ul {
+
+				margin: 0 0 0 5px;
+
+				padding: 0 0 0 15px;
+
+				background-color: #edede1;
+
+				width: 130px;
+
+				}
+
+				
+
+				.stretcher ul li {
+
+					padding: 5px 0 5px 0;
+
+					list-style-type: none;
+
+					border-right: 3px solid #BDBDBD;
+
+					}
+
+					
+
+				.stretcher ul li.selected {
+
+					padding-left: 5px;
+
+					margin-left: -5px;
+
+					background-color: #FFFFFF;
+
+					border-top: 3px solid #c2c2b9;
+
+					border-bottom: 1px solid #c2c2b9;
+
+					border-left: 3px solid #c2c2b9;
+
+					border-right: none;
+
+					}
+
+					
+
+				.stretcher li.bottom {
+
+					border: 0;
+
+					margin: 0 0 0 -15px;
+
+					padding: 0;
+
+					height: 10px;
+
+					background: url("../images/left_bottom.gif") no-repeat top #ffffff;
+
+					}
+
+
+
+				a#callToAction, a#callToAction:link, a#callToAction:visited {
+
+					position: absolute;
+
+					display: block;
+
+					top: 0;
+
+					right: 17px;
+
+					width: 169px;
+
+					height: 0;
+
+					padding: 42px 0 0 0;
+
+					overflow: hidden;
+
+					background-image: url("../images/btn_requestproposal2.gif");
+
+					background-position: 0 0 ;
+
+					}
+
+				a#callToAction:hover {
+
+					background-position: 0 42px;
+
+					}
+
+				
+
+				#body h2 {
+
+					clear: both;
+
+					}
+
+
+
+		#col_left h2 {
+
+			width: 184px;
+
+			height: 55px;
+
+			padding: 0;
+
+			margin: 0 auto 15px auto;
+
+			font-size: 1em;
+
+			}
+
+			
+
+			#col_left h2 a, #col_left h2 a:link, #col_left h2 a:visited {
+
+				display: block;
+
+				width: 184px;
+
+				height: 0;
+
+				overflow: hidden;
+
+				padding: 55px 0 0 0;
+
+				background-image: url("../images/title_wegrow.gif");
+
+				background-position: 0 0;
+
+				}
+
+			#col_left h2 a:hover {
+
+				background-position: 0 55px;
+
+				}
+
+		
+
+		#aboutDt {
+
+			position: relative;
+
+			margin: 0;
+
+			padding: 0 10px 0 10px;
+
+			height: 269px;		
+
+			
+
+			}
+
+			#aboutDt p {
+
+				margin: 0;
+
+				padding: 0;
+
+				}
+
+		
+
+			#col_left p a, #col_left p a:link, #col_left p a:visited {
+
+				display: block;
+
+				text-align: right;
+
+				}
+
+		
+
+		#col_left a.blueButton, #col_left a.blueButton:link, #col_left a.blueButton:visited {
+
+			position: relative;
+
+			display: block;
+
+			margin: 0 auto 0 auto;
+
+			overflow: hidden;
+
+			width: 179px;
+
+			height: 0;
+
+			padding: 42px 0 0 0;
+
+			text-align: center;
+
+			text-decoration: none;
+
+			background-image: url("../images/btn_requestproposal.gif");
+
+			background-position: 0 0;
+
+			}
+
+		#col_left a.blueButton:hover {
+
+			background-position: 0 42px;
+
+			}
+
+		
+
+		#dtJobs {
+
+			position: relative;
+
+			z-index: 100;
+
+			padding: 10px;
+
+			text-align: right;
+
+			}
+
+			#dtJobs h4 {
+
+				margin-top: 5px;
+
+				font-size: 1em;
+
+				text-align: left;
+
+				}
+
+			#dtJobs ul {
+
+				position: relative;
+
+				margin: 5px 0 5px 20px;
+
+				padding: 0;
+
+				text-align: left;
+
+				}
+
+				#dtJobs ul li {
+
+					position: relative;
+
+					margin: 0;
+
+					padding: 0;
+
+					list-style-image: url("../images/bullet_arrow.gif");
+
+					}
+
+	
+
+	#col_right {
+
+		position: relative;
+
+		width: 525px;
+
+		padding: 0 15px 0 5px;
+
+		float: left;
+
+		overflow: hidden;
+
+		}
+
+		
+
+		#sub_header {
+
+			position: relative;
+
+			clear: both;
+
+			overflow: hidden;
+
+			width: 100%;
+
+			padding: 0;
+
+			margin: 0 0 15px 0;
+
+			}
+
+			.bmgLink a, .bmgLink a:link, .bmgLink a:visited {
+
+				float: left;
+
+				width: 171px;
+
+				height: 0;
+
+				padding: 126px 0 0 0;
+
+				overflow: hidden;
+
+				margin: 0 0 0 4px;
+
+				background-position: 0 126px;
+
+				}
+
+				#sub_header a.currentSection, #sub_header a.currentSection:link, #sub_header a.currentSection:visited, #sub_header a.currentSection:hover {
+
+					background-position: 0 0;
+
+					}
+
+				#sub_header a:hover {
+
+					background-position: 0 0;
+
+					}
+
+				#bmgBuild {
+
+					background-image: url("../images/bmg_build.gif");
+
+					}
+
+				#bmgMarket {
+
+					background-image: url("../images/bmg_market.gif");
+
+					}
+
+				#bmgGrow {
+
+					background-image: url("../images/bmg_grow.gif");
+
+					}
+
+		
+
+		#copy {
+
+			position: relative;
+
+			clear: left;
+
+			float: left;
+
+			width: 345px;
+
+			z-index: 0;
+
+			}
+
+		
+
+		#right_nav {
+
+			position: relative;
+
+			width: 170px;
+
+			overflow: hidden;
+
+			float: right;
+
+			margin: 0 0 -20000px 0;
+
+			padding: 0 0 20000px 0;
+
+			z-index: 1;
+
+			}
+
+			
+
+			#right_nav h4 {
+
+				line-height: 40px;
+
+				font-size: 1em;
+
+				text-align: center;
+
+				background: url("../images/right_title.gif") no-repeat;
+
+				}
+
+			
+
+			#right_nav ul {
+
+				position: relative;
+
+				margin: 0 0 15px 0;
+
+				padding: 0;
+
+				}
+
+				#right_nav ul li {
+
+					position: relative;
+
+					margin: 0;
+
+					padding: 0 0 0 0;
+
+					line-height: 25px;
+
+					list-style-type: none;
+
+					background: url("../images/dots.gif") left bottom repeat-x;
+
+					}
+
+					#right_nav ul li.bottom {
+
+						background: none;
+
+						}
+
+						#right_nav ul li a, #right_nav ul li a:link, #right_nav ul li a:visited {
+
+							padding-left: 20px;
+
+							background: url("../images/bullet_arrow.gif") left no-repeat;
+
+							}
+
+		
+
+		a#getStartedInt, a#getStartedInt:link, a#getStartedInt:visited {
+
+			position: relative;
+
+			display: block;
+
+			width: 170px;
+
+			height: 0;
+
+			padding: 42px 0 0 0;
+
+			margin: 0 0 15px 0;
+
+			overflow: hidden;
+
+			background-image: url("../images/btn_getstarted.gif");
+
+			background-position: 0 0;
+
+			}
+
+		a#getStartedInt:hover {
+
+			background-position: 0 -42px;
+
+			}
+
+			
+
+		#col_right .serviceList {
+
+			position: relative;
+
+			margin: 0;
+
+			width: 138px;
+
+			float: left;
+
+			}
+
+			#col_right #buildServices { padding: 0 0 0 30px; }
+
+			#col_right #marketServices { padding: 0 0 0 40px; }
+
+			#col_right #growServices { padding: 0 0 0 40px; }
+
+			#col_right .serviceList li {
+
+				position: relative;
+
+				margin: 0;
+
+				padding: 0;
+
+				line-height: 19px;
+
+				height: 19px;
+
+				list-style-image: url("../images/bullet_arrow.gif");
+
+				}
+
+		
+
+		 .features {
+
+			position: relative;
+
+			float: left;
+
+			margin: 30px 0 0 0;
+
+			padding: 0;
+
+			background: url("files/features_back.gif") 0 26px repeat-x;
+
+			height: 200px;
+
+			}
+
+			.features a, .features a:link, .features a:visited {
+
+				display: block;
+
+				margin: 0;
+
+				text-align: right;
+
+				}
+
+			.features .feedLink {
+
+				position: absolute;
+
+				top: 3px;
+
+				left: 75px;
+
+				}
+
+			.features h3 {
+
+				line-height: 23px;
+
+				padding: 0 0 0 10px;
+
+				margin: 0 0 3px 0;
+
+				background-image: url("files/h3_back.gif");
+
+				background-repeat: no-repeat;
+
+				}
+
+			.features h4, .features p {
+
+				padding: 8px 15px 8px 15px;
+
+				margin: 0;
+
+				}
+
+				#newsFeed {
+
+					width: 350px;
+
+					margin-right: 5px;
+
+					}
+
+					#newsFeed h3 {
+
+						background-position: left top;
+
+						}
+
+				#featuredService {
+
+					width: 170px;
+
+					}
+
+					#featuredService h3 {
+
+						background-position: left bottom;
+
+						}
+
+					#featuredService .logo {
+
+						float: right;
+
+						margin: 8px 10px 0 0;
+
+						}
+
+		ul.formList {
+
+			margin: 0;
+
+			padding: 0;
+
+			}
+
+			
+
+			ul.formList li {
+
+				position: relative;
+
+				list-style-type: none;
+
+				margin: 10px auto 10px auto;
+
+				height: 20px;
+
+				width: 340px;
+
+				}
+
+				ul.formList[class] li {
+
+					height: auto;
+
+					padding-bottom: 5px;
+
+					}
+
+			ul.formList li input {
+
+				position: absolute;
+
+				top: -3px;
+
+				right: 0;
+
+				width: 200px;
+
+				height: 14px;
+
+				}
+
+				ul.formList li input.checkbox {
+
+					position: relative;
+
+					width: 20px;
+
+					height: 14px;
+
+					top: 0;
+
+					}
+
+				ul.formList[class] li input.checkbox {
+
+					top: 3px;
+
+					}
+
+			ul.formList li textarea {
+
+				margin: 5px 0 15px 0;
+
+				height: 150px;
+
+				width: 335px;
+
+				}
+
+			ul.formList li.submit {
+
+				height: 41px;
+
+				}
+
+			ul.formList li.submit a, ul.formList li.submit a:link, ul.formList li.submit a:visited {
+
+				position:absolute;
+
+				top: 0;
+
+				right: 0;
+
+				display: block;
+
+				width: 169px;
+
+				height: 0;
+
+				padding-top: 42px;
+
+				overflow: hidden;
+
+				background-position: 0 0;
+
+				}
+
+			ul.formList li.submit a:hover {
+
+				background-position: 0 42px;
+
+				}
+
+				ul.formList li.submit a.green {
+
+					background-image: url("../images/btn_submitg.gif");
+
+					}
+
+				ul.formList li.submit a.blue {
+
+					background-image: url("../images/btn_submitb.gif");
+
+					}
+
+				ul.formList li.submit a.step2 {
+
+					background-image: url("../images/btn_step2of2.gif");
+
+					}
+
+	
+
+#footer {
+
+	position: relative;
+
+	width: 100%;
+
+	height: 100px;
+
+	}
+
+	
+
+	.vcard {
+
+		display: inline;
+
+		}
+
+		.vcard .org, .vcard a.email, .vcard .adr, .vcard .tel {
+
+			position: relative;
+
+			display: block;
+
+			float: left;
+
+			width: 0;
+
+			height: 0;
+
+			overflow: hidden;
+
+			}
+
+	
+
+	.footer_left {
+	position: relative;
+	float: left;
+	height: 20px;
+	padding: 10px 0 0 16px;
+	width: 270px;
+
+		}
+
+	
+
+	.footer_right {
+
+		position: relative;
+
+		float: right;
+
+		height: 20px;
+
+		padding: 10px 16px 0 0;
+
+		width: 150px;
+
+		text-align: right;
+
+		}
+
+	
+
+	.footer_bottom {
+
+		position: relative;
+
+		clear: both;
+
+		height: 20px;
+
+		padding: 10px 0 0 16px;
+
+		}
+
+
+
+
+
+
+
+/* MooFX AJAX Functions */
+
+.stretcher {
+
+	background: none !important;
+
+	background: #ffffff;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+/* Case Studies Page Styling */
+
+#case_study_wrapper {
+
+	position: relative;
+
+	overflow: hidden;
+
+	}
+
+
+
+#project_navigation {
+
+	position: relative;
+
+	background: url("../images/back_case_project_top.gif") top left no-repeat;
+
+	overflow: hidden;
+
+	width: 346px;
+
+	height: 41px;
+
+	}
+
+	
+
+	#loading {
+
+		position: absolute;
+
+		top: 2px;
+
+		left: 256px;
+
+		visibility: hidden;
+
+		}
+
+	
+
+	#project_dropDown {
+
+		position: absolute;
+
+		top: 10px;
+
+		left: 10px;
+
+		font-weight: bold;
+
+		line-height: 20px;
+
+		}
+
+		
+
+		#project_dropDown select {
+
+			width: 163px;
+
+			height: 20px;
+
+			font-size: 11px;
+
+			font-weight: bold;
+
+			color: #666666;
+
+			border: 1px solid #666666;
+
+			}
+
+	
+
+	#prev_next {
+
+		position: absolute;
+
+		top: 10px;
+
+		left: 280px;
+
+		height: 22px;
+
+		overflow: hidden;
+
+		}
+
+		
+
+		#prev_next img {
+
+			margin-left: 5px;
+
+			}
+
+
+
+#slide_container {
+
+	position: relative;
+
+	clear: both;
+
+	overflow: hidden;
+
+	}
+
+
+
+	#screenshot_name {
+
+		font-weight: bold;
+
+		color: #cc6633;
+
+		margin-bottom: 7px;
+
+		}
+
+	
+
+	#screenshot_description {
+
+		height: 0;
+
+		overflow: hidden;
+
+		}
+
+	
+
+#picture {
+
+	position: relative;
+
+	width: 345px;
+
+	overflow: hidden;
+
+	}
+
+
+
+#project_header {
+
+	font-size: 1.1em;
+
+	margin: 0 0 5px 0;
+
+	font-weight: bold;
+
+	}
+
+
+
+#project_links {
+
+	margin: 0 0 10px 0;
+
+	overflow: hidden;
+
+	font-weight: bold;
+
+	}
+
+	
+
+	#project_links a {
+
+		margin-right: 20px;
+
+		}
+
+		
+
+		#project_links a img {
+
+			margin-bottom: -2px;
+
+			}
+
+
+
+#project_challenge {
+
+	margin-bottom: 15px;
+
+	}
+
+
+
+.image_thumb {
+
+	margin: 0 0 10px 7px;
+
+	}
+
+	
+
+	.image_thumb img {
+
+		border: 1px solid #999999;
+
+		}
+
+	
+
+	.image_thumb a:hover img {
+
+		border: 1px solid #cc6633;
+
+		}
+
+
+
+#thumbnail_list_container {
+
+	margin-bottom: 15px;
+
+	}
+
+	
+
+
+
+a#carbonNeutralBtn, a#carbonNeutralBtn:link, a#carbonNeutralBtn:visited {
+
+	position: relative;
+
+	display: block;
+
+	width: 140px;
+
+	height: 0;
+
+	padding-top: 29px;
+
+	overflow: hidden;
+
+	margin: 55px auto 10px auto;
+
+	line-height: 29px;
+
+	background-image: url("../images/btn_carbonneutral.gif");
+
+	background-position: 0 0;
+
+	}
+
+a#carbonNeutralBtn:hover {
+
+	background-position: 0 29px;
+
+	}
+
+
+
+
+
+#footer #carbonNeutralBtn {
+
+	position: absolute;
+
+	top: 10px;
+
+	right: 2px;
+
+	padding: 29px 0 0 0;
+
+	margin: 0;
+
+	border: none;
+
+	}
+
+#customers{
+
+
+
+display:table;
+
+margin-top: 10px;

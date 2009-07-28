@@ -1,0 +1,374 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="files/stylesheet.css" rel="stylesheet" type="text/css">
+    <title>website layout</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="ourAssets/styles.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table width="955" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <!--Header starts here-->
+                                <table width="98%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="header_row1" valign="middle" align="left">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="header-bg" valign="top" align="center">
+                                            <div id="header_row2">
+                                                <div id="tplft">
+                                                    <a href="#">
+                                                        <img src="ourAssets/JayahoIndia-Logo.jpg" alt="Jayaho India" width="300" height="84"></a></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!--Header ends here-->
+                            </td>
+                        </tr>
+                        <tr width="90%" bgcolor="White">
+                            <td style="line-height: 20px;">
+                                <table width="98%" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="navigator" width="25%" align="left">
+                                            Hi ! Logged User Name
+                                        </td>
+                                        <td class="navigator" width="50%" align="center">
+                                            Last Login Time:&nbsp;Jun 20, 2009 11:48 Hrs
+                                        </td>
+                                        <td class="navigator" width="2%" align="right">
+                                            <a href="#"><u>Logout</u></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" bgcolor="White" height="100%" border="0" cellpadding="1" cellspacing="0">
+                                    <tr>
+                                        <td valign="top">
+                                            <!-- left menu -->
+                                            <table class="leftmenu" align="left" width="200" border="0" cellpadding="0" cellspacing="0"
+                                                height="100%" background="files/navi_bg.gif">
+                                                <tr>
+                                                    <td height="7" style="vertical-align: top;" background="files/navi_top.gif">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td valign="bottom" height="18">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="default.aspx">Home</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td valign="bottom" height="18">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="myprofile.aspx">My Profile</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="sendSMS.aspx">Send SMS</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td valign="top">
+                                                                    <a class="buttonbgfont" href="mybusiness.aspx">My Business</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td valign="top">
+                                                                    <a class="buttonbgfont" href="phonebook.aspx">Phone Book</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="downline.aspx">Downline</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="officialreceipt.aspx">Official Receipt</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="treeview.aspx">Tree View</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="ledger.aspx">Ledger</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="pindetails.aspx">Pin Details</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="carddetails.aspx">Card Details</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="paymentreport.aspx">Payment Report</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="dispatchdetails.aspx">Dispatch Details</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="paycardactivation.aspx">Pay Card Activation</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="downlinesummary.aspx">Downline Summary</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="200">
+                                                        <table>
+                                                            <tr>
+                                                                <td height="25">
+                                                                    &nbsp;
+                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                </td>
+                                                                <td>
+                                                                    <a class="buttonbgfont" href="helpdesk.aspx">Help Desk</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="100%">
+                                                        <table width="100%" height="100%">
+                                                            <tr>
+                                                                <td>
+                                                                    &nbsp;
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="7" style="vertical-align: top;" background="files/navi_bottom.gif">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- left menu -->
+                                        </td>
+                                        <td valign="top" bgcolor="White">
+                                            <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
+                                            </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" height="2">
+                </td>
+            </tr>
+            <tr>
+                <td class="navigator_normal">
+                    <!--Footer starts here-->
+                    <table class="navigator_normal" width="100%" align="center">
+                        <tr>
+                            <td>
+                                <div id="footer_home">
+                                    <div id="footer-nav">
+                                        <div class="navigator_normal">
+                                            <a href="sitemap.aspx">&nbsp;&nbsp; <span class="navigator_normal">
+                                                <font color="White">Site Map</font></span></a><span class="navigator_normal"><font
+                                                    color="White"> | </font></span><a href="tandc.aspx"><span
+                                                        class="navigator_normal"><font color="White">Terms &amp; Conditions</font></span></a></div>
+                                        <br>
+                                        <div class="navigator_normal">
+                                            <font color="White">&nbsp;&nbsp; We accept all major credit cards.</font>
+                                            <br>
+                                            <font color="White">&nbsp;&nbsp; © 2009 JayahoIndia &amp; </font></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <!--Footer ends here-->
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
