@@ -1,0 +1,21 @@
+﻿body
+{
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	height: 100%;
+	background: url(../ourAssets/background-bg.gif) #e6f1f8 center top repeat-x;
+}
+
+#footer_home
+{
+	height: 92px; /*** The drawback with this solution is that the height of the footer can't be flexible. If you add so much content to the footer that it extends 30px, you will get a vertical scrollbar and the content will overflow the footer if you don't set overflow to hidden ***/
+	margin: 0 auto; /*** By using a negative margin-top we now moves the footer up the same amount as the footer height to avoid vertical scrolling. Remember, if you use borders and padding on your footer you will have to calculate this in your negative margin-top value also. ***/
+	text-align: left;
+	background: url(../files/background-footer.gif) bottom;
+}
+
+.leftmenu td
+{
+	text-align: left;
+}
