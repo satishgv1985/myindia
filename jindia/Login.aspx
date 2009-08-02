@@ -25,7 +25,7 @@
                         Login Name:
                     </td>
                     <td>
-                        <asp:TextBox ID="tbLoginName" runat="server" Text="" Width="150px"></asp:TextBox>
+                        <asp:TextBox ID="tbLoginName" runat="server" Text="admin" Width="150px"></asp:TextBox>
                         <asp:RequiredFieldValidator ControlToValidate="tbLoginName" SetFocusOnError="true"
                             ID="rfvLoginName" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
@@ -42,7 +42,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:LinkButton ID="lbLogin" runat="server" Text="Login" OnClick="lbLogin_Click"></asp:LinkButton>
+                        <asp:LinkButton ID="lbLogin"  runat="server" Text="Login" OnClick="lbLogin_Click"></asp:LinkButton>
                         <%--<asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />--%>
                     </td>
                     <td>
