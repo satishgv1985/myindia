@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using System.Data.SqlClient;
 
 public partial class Login : System.Web.UI.Page
 {
@@ -110,6 +111,39 @@ public partial class Login : System.Web.UI.Page
     //}
     protected void lbLogin_Click(object sender, EventArgs e)
     {
-        Response.Redirect("MyProfile.aspx");
+        string username = tbLoginName.Text;
+        string password = tbPassword.Text;
+
+        password = "21232F297A57A5A743894A0E4A801FC3";
+
+
+
+
+        string userId;
+        //userId= Conveert.ToString(Session["userid"]);
+        userId = "";
+        string ConnectionString = ConfigurationSettings.AppSettings["jayahoConnectionString"].ToString();
+
+        SqlConnection con = new SqlConnection(ConnectionString);
+        string sqlQuery = string.Format("SELECT userId FROM users WHERE username='{0}' and password='{1} ", username, password);
+        SqlCommand cmd = new SqlCommand(sqlQuery);
+
+        con.Open();
+        SqlDataReader dr;
+        dr = cmd.ExecuteReader();
+
+        if (dr.Read())
+        {
+            Session["verified"] = true;
+            Session["userid"] = dr[0];
+            Response.Redirect("MyProfile.aspx");
+        }
+        else
+        {
+            Session["verified"] = false;
+            lblInvalidError.Visible = true;
+        }
+        con.Close();
+
     }
 }

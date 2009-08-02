@@ -71,8 +71,9 @@
                                                 <td class="navigator" width="21" background="files/line.gif">
                                                     &nbsp;
                                                 </td>
+                                                
                                                 <td class="navigator_normal" width="347">
-                                                    Mahendranath Reddy . D
+                                                  <asp:Label ID="lblCustomerName" runat="server" ></asp:Label>  
                                                 </td>
                                             </tr>
                                             <tr>
@@ -83,18 +84,18 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
-                                                    903197525
+                                                    <asp:Label ID="lblAccountNo" runat="server" ></asp:Label>  
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td class="navigator" height="35">
-                                                    <b>No. </b>
+                                                    <b>Mobile No. </b>
                                                 </td>
                                                 <td class="navigator" width="21" background="files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    9243026126
+                                                   <asp:Label ID="lblMobileNo" runat="server" ></asp:Label>  
                                                 </td>
                                             </tr>
                                             <tr>
@@ -105,13 +106,7 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    No-161/4, 4th Main,
-                                                    <br>
-                                                    Chowdeswari Layout, Marathahalli,<br>
-                                                    Near Sony World,<br>
-                                                    Bangalore<br>
-                                                    Karnataka-560037<br>
-                                                    India
+                                                    <asp:Label ID="lblAddress" runat="server" ></asp:Label>  
                                                     <br>
                                                     <a href="/ChangeBillingAddressAction.do">Click here</a> to change the Address.
                                                 </td>
@@ -126,7 +121,7 @@
                                                 <td class="navigator_normal">
                                                     <br>
                                                     <br>
-                                                    dmnreddy@gmail.com<br>
+                                                   <asp:Label ID="lblEmailAddress" runat="server" ></asp:Label>  <br>
                                                     <a href="/MyProfileAction.do">Click here</a> to change your E-mail Address.
                                                 </td>
                                             </tr>
@@ -152,10 +147,10 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    27-FEB-2009
+                                                    <asp:Label ID="lblActivationDate" runat="server" ></asp:Label>  
                                                 </td>
                                             </tr>
-                                            <tr>
+                                       <%--     <tr>
                                                 <td class="navigator" height="35">
                                                     <b>Date </b>
                                                 </td>
@@ -180,7 +175,7 @@
                                                 <td class="navigator_normal">
                                                     1556
                                                 </td>
-                                            </tr>
+                                            </tr>--%>
                                             <%--           <tr>
                                                 <td class="navigator" height="35">
                                                     <b> Due Date</b>
@@ -191,7 +186,7 @@
                                                 <td class="navigator_normal">
                                                     08-JUN-2009
                                                 </td>
-                                            </tr>--%>
+                                            </tr>
                                             <tr>
                                                 <td class="navigator" height="35">
                                                     <b>Outstanding Amount Due (Rs)</b>
@@ -213,7 +208,7 @@
                                                 <td class="navigator_normal">
                                                     7500
                                                 </td>
-                                            </tr>
+                                            </tr>--%>
                                             <%--      <tr>
                                                 <!--Modified by hari for CR COCC4764-->
                                                 <td class="navigator_normal" height="35">
