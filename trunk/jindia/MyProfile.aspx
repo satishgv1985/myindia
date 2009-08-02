@@ -4,11 +4,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <table width="98%" bgcolor="White" border="0" cellpadding="0" cellspacing="0" height="100%">
         <tr>
+            <td style="font-size: 13px;">
+                <b><u>My Profile</u></b></td>
+        </tr>
+        <%--<tr>
             <td style="padding-bottom: 6px;">
                 <img src="files/eprofile_banner.jpg" width="772" height="120">
             </td>
         </tr>
-        <%-- <tr>
+         <tr>
             <td>
                 <table width="100%" bgcolor="White" border="0" cellpadding="4" cellspacing="0" height="16">
                     <tr>
@@ -28,7 +32,7 @@
             </td>
         </tr>--%>
         <tr>
-            <td class="navigator" align="left" bgcolor="#ebebeb">
+            <td class="navigator" align="left" bgcolor="#ebebeb" style="margin-top: 5px;">
                 <table width="100%" border="0" cellpadding="4" cellspacing="0">
                     <tr>
                         <td width="10%" style="border-right: 1px solid black;">
@@ -177,7 +181,7 @@
                                                     1556
                                                 </td>
                                             </tr>
-                                 <%--           <tr>
+                                            <%--           <tr>
                                                 <td class="navigator" height="35">
                                                     <b> Due Date</b>
                                                 </td>
@@ -210,7 +214,7 @@
                                                     7500
                                                 </td>
                                             </tr>
-                                      <%--      <tr>
+                                            <%--      <tr>
                                                 <!--Modified by hari for CR COCC4764-->
                                                 <td class="navigator_normal" height="35">
                                                     <p>
