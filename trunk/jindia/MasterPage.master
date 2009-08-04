@@ -1,4 +1,4 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="JayahoIndia.MasterPage" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -6,6 +6,9 @@
     <title>website layout</title>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <link href="ourAssets/styles.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+    
+    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -40,13 +43,13 @@
                                 <table width="98%" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td class="navigator" width="25%" align="left">
-                                            Hi ! Logged User Name
+                                            Welcome&nbsp;<asp:Label ID="lblName" runat="server" ></asp:Label>
                                         </td>
                                         <td class="navigator" width="50%" align="center">
                                             Last Login Time:&nbsp;Jun 20, 2009 11:48 Hrs
                                         </td>
                                         <td class="navigator" width="2%" align="right">
-                                            <a href="#"><u>Logout</u></a>
+                                            <asp:LinkButton ID="lbLogout" runat="server" Text="Logout" OnClick="lbLogout_Click"></asp:LinkButton>
                                         </td>
                                     </tr>
                                 </table>

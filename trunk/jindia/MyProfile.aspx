@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
-    CodeFile="MyProfile.aspx.cs" Inherits="MyProfile" Title="Untitled Page" %>
+    CodeFile="MyProfile.aspx.cs" Inherits="JayahoIndia.MyProfile" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <table width="98%" bgcolor="White" border="0" cellpadding="0" cellspacing="0" height="100%">
@@ -63,6 +63,10 @@
                             <table class="navigator_normal" width="98%" border="0" cellpadding="1" cellspacing="1">
                                 <tr>
                                     <td>
+                                        Personal Information</td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <table width="568" border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td class="navigator" width="200" height="35">
@@ -71,9 +75,8 @@
                                                 <td class="navigator" width="21" background="files/line.gif">
                                                     &nbsp;
                                                 </td>
-                                                
                                                 <td class="navigator_normal" width="347">
-                                                  <asp:Label ID="lblCustomerName" runat="server" ></asp:Label>  
+                                                    <asp:Label ID="lblCustomerName" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -84,7 +87,7 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
-                                                    <asp:Label ID="lblAccountNo" runat="server" ></asp:Label>  
+                                                    <asp:Label ID="lblAccountNo" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -95,7 +98,7 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                   <asp:Label ID="lblMobileNo" runat="server" ></asp:Label>  
+                                                    <asp:Label ID="lblMobileNo" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -106,7 +109,7 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    <asp:Label ID="lblAddress" runat="server" ></asp:Label>  
+                                                    <asp:Label ID="lblAddress" runat="server"></asp:Label>
                                                     <br>
                                                     <a href="/ChangeBillingAddressAction.do">Click here</a> to change the Address.
                                                 </td>
@@ -121,7 +124,8 @@
                                                 <td class="navigator_normal">
                                                     <br>
                                                     <br>
-                                                   <asp:Label ID="lblEmailAddress" runat="server" ></asp:Label>  <br>
+                                                    <asp:Label ID="lblEmailAddress" runat="server"></asp:Label>
+                                                    <br>
                                                     <a href="/MyProfileAction.do">Click here</a> to change your E-mail Address.
                                                 </td>
                                             </tr>
@@ -147,10 +151,10 @@
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    <asp:Label ID="lblActivationDate" runat="server" ></asp:Label>  
+                                                    <asp:Label ID="lblActivationDate" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
-                                       <%--     <tr>
+                                            <%--     <tr>
                                                 <td class="navigator" height="35">
                                                     <b>Date </b>
                                                 </td>
@@ -262,9 +266,54 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="navigator_normal">
-                                        <br>
-                                        Please <a href="#"><u><b>Click here</b></u></a> to view your last login details.
+                                    <td>
+                                        Bank Information</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table width="568" border="0" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="navigator" width="200" height="35">
+                                                    <b>PAN Number</b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal" width="347">
+                                                    <asp:Label ID="lblPanNumber" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" width="169" height="35">
+                                                    <b>Account No.</b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal" width="347">
+                                                    <asp:Label ID="lblBankActNo" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" height="35">
+                                                    <b>Pay Card No.</b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblPayCardNo" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td height="15">
+                                                    &nbsp;
+                                                </td>
+                                                <!-- <td >&nbsp;</td>
+                                  <td>&nbsp;</td> -->
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>

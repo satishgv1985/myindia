@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Login.aspx.cs" Inherits="Login" Title="Untitled Page" %>
+    CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Untitled Page" %>
 
 <%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
@@ -42,12 +42,12 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:LinkButton ID="lbLogin"  runat="server" Text="Login" OnClick="lbLogin_Click"></asp:LinkButton>
+                        <asp:LinkButton ID="lbLogin"  runat="server" Text="Login" OnClick="lbLogin_Click" CausesValidation="true"></asp:LinkButton>
                         <%--<asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />--%>
                     </td>
                     <td>
                         <%--<asp:Button ID="btnReset" runat="server" Text="Reset" OnClick="btnReset_Click" CausesValidation="false" />--%>
-                        <asp:LinkButton ID="lbReset" runat="server" Text="Reset"></asp:LinkButton>
+                        <asp:LinkButton ID="lbReset" runat="server" Text="Reset" CausesValidation="false" OnClick="lbReset_Click"></asp:LinkButton>
                     </td>
                 </tr>
             </table>

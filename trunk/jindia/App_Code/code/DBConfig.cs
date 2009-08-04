@@ -24,7 +24,8 @@ namespace JayahoIndia {
             }
         }
 
-        public static bherila.Connection GetMySQLConnection() {
+        public static Connection createSQLConnection()
+        {
             JayahoIndia.Connection conn = JayahoIndia.Connection.createSQLConnection(DBConfig.ConnectionString);
             return conn;
         }
