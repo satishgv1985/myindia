@@ -26,27 +26,40 @@
     <table cellpadding="3" style="border: 1px solid #d8d8d8; padding: 3px; margin-top: 5px;
         width: 97%;">
         <tr>
-            <td>
-                User Name:
-            </td>
-        </tr>
+                    <td colspan="2">
+                        <asp:Label Text="User Logged Out Successfully" ID="lblUserLogout" runat="server"
+                            ForeColor="Red"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label Text="Invalid Loginname or Password" ID="lblInvalidError" runat="server"
+                            ForeColor="Red"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Login Name:
+                    </td>
+                    <td>
+                        <asp:TextBox ID="tbLoginName" runat="server" Text="admin" Width="150px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ControlToValidate="tbLoginName" SetFocusOnError="true"
+                            ID="rfvLoginName" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <asp:TextBox ID="tbPassword" runat="server" Text="" TextMode="Password" Width="150px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ControlToValidate="tbPassword" SetFocusOnError="true"
+                            ID="rfvPassword" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
+                </tr>
         <tr>
             <td>
-                <asp:TextBox ID="username" Width="140" Text="a" runat="server"></asp:TextBox></td>
-        </tr>
-        <tr>
-            <td>
-                Password:
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:TextBox ID="password" Width="140" Text="a" TextMode="password" runat="server"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <asp:LinkButton ID="lbLogin" runat="server" Text="Login" CssClass="loginbutton" Width="70px"></asp:LinkButton>
+                <asp:LinkButton ID="lbLogin"  runat="server" Text="Login" OnClick="lbLogin_Click" CausesValidation="true"></asp:LinkButton>
             </td>
         </tr>
         <tr>
