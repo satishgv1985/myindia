@@ -1,9 +1,8 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
     CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Untitled Page" %>
 
-<%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <uc:LeftColumn ID="leftColumn" runat="server" />
+   
     <div style="padding-top: 50px; clear: none; left: 100px; text-align: left; float: right;
         padding-right: 200px; font-family: Tahoma; font-size: 11px;">
         <div>
