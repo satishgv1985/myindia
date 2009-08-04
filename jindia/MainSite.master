@@ -13,24 +13,26 @@
                 <center>
                 </center>
                 <h1>
-                    <a href="main/index.htm">JayahoIndia</a></h1>
+                    <a href="default.aspx">JayahoIndia</a></h1>
                 <h2 style="background-image: url('original/header_grow_new.jpg'); background-repeat: no-repeat;">
                     Wireless &amp; Voice Serices &amp; Products</h2>
                 <ul id="nav">
                     <li class="nav1" style="background-image: url('original/nav1.gif');"><a href="default.aspx">
                         Home</a></li>
-                    <li class="nav2" style="background-image: url('original/nav2.gif');"><a href="/products/index.htm">
+                    <li class="nav2" style="background-image: url('original/nav2.gif');"><a href="AboutUs.aspx">
+                        About Us</a></li>
+                    <li class="nav3" style="background-image: url('original/nav3.gif');"><a href="products.aspx">
                         Products</a></li>
-                    <li class="nav3" style="background-image: url('original/nav3.gif');"><a href="/services/index.htm">
-                        Services</a></li>
-                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="/about/customers.htm">
-                        Customers</a></li>
-                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="/news/index.htm">
-                        News &amp; Events</a><a href="http://www.techunified.com/case_studies.htm"></a></li>
-                    <li class="nav5" style="background-image: url('original/nav5.gif');"><a href="/about/resources.htm">
-                        Sign Up <em><strong></strong></em></a></li>
-                    <li class="nav6" style="background-image: url('original/nav6.gif');"><a href="/about/index.htm">
-                        About Us <em><strong></strong></em></a></li>
+                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="BusinessPlan.aspx">
+                        Business Plan</a></li>
+                    <li class="nav4" style="background-image: url('original/nav4.gif');"><a href="registration.aspx">
+                        Registration</a></li>
+                    <li class="nav5" style="background-image: url('original/nav5.gif');"><a href="Advertise.aspx">
+                        Advertise</a></li>
+                    <li class="nav6" style="background-image: url('original/nav6.gif');"><a href="contactus.aspx">
+                        Contact Us</a></li>
+
+                   
                 </ul>
             </div>
             <div id="content" style="background-image: url('original/content_back.gif'); padding-top: 5px;">
