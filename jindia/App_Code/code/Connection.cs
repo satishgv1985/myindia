@@ -4,6 +4,7 @@ using System.Data.Common;
 using System.Collections.Generic;
 using System.Text;
 using System.Web.UI;
+using System.Data.SqlClient;
 
 namespace JayahoIndia
 {
@@ -123,8 +124,8 @@ namespace JayahoIndia
         /// <param name="connectionString"></param>
         public static Connection createSQLConnection(string connectionString) {
             Connection c = new Connection();
-            c.conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            c.cmd = new MySql.Data.MySqlClient.MySqlCommand();
+            c.conn = new SqlConnection(connectionString);
+            c.cmd = new SqlCommand();
             c.cmd.Connection = c.conn;
             return c;
         }
