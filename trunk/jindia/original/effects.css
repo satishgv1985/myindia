@@ -6,7 +6,7 @@ body
 	font-size: 80%;
 	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
-
+/*
 a, a:link, a:visited
 {
 	color: #1f82a9;
@@ -17,7 +17,7 @@ a:hover
 {
 	color: #006699;
 	text-decoration: underline;
-}
+}*/
 
 #body
 {
