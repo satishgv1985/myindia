@@ -112,34 +112,34 @@ namespace JayahoIndia
             password = "admin";
 
 
-            JayahoIndiaDSTableAdapters.spValidateUserTableAdapter objta = new JayahoIndiaDSTableAdapters.spValidateUserTableAdapter();
-            JayahoIndiaDS.spValidateUserDataTable objSvudt = objta.GetData(username, password);
+            //JayahoIndiaDSTableAdapters.spValidateUserTableAdapter objta = new JayahoIndiaDSTableAdapters.spValidateUserTableAdapter();
+            //JayahoIndiaDS.spValidateUserDataTable objSvudt = objta.GetData(username, password);
 
-            if (objSvudt.Rows.Count == 0)
-            {
-                lblInvalidError.Visible = true;
-            }
-            else
-            {
-                DataRow drUser = objSvudt.Rows[0];
+            //if (objSvudt.Rows.Count == 0)
+            //{
+            //    lblInvalidError.Visible = true;
+            //}
+            //else
+            //{
+            //    DataRow drUser = objSvudt.Rows[0];
 
-                UserData ud = new UserData();
-                ud.UserId = Convert.ToString(drUser["userId"]);
-                ud.Name = Convert.ToString(drUser["name"]);
-                ud.Address = Convert.ToString(drUser["address"]);
-                ud.Place = Convert.ToString(drUser["place"]);
-                ud.State = Convert.ToString(drUser["state"]);
-                ud.Pincode = Convert.ToString(drUser["pincode"]);
+            //    UserData ud = new UserData();
+            //    ud.UserId = Convert.ToString(drUser["userId"]);
+            //    ud.Name = Convert.ToString(drUser["name"]);
+            //    ud.Address = Convert.ToString(drUser["address"]);
+            //    ud.Place = Convert.ToString(drUser["place"]);
+            //    ud.State = Convert.ToString(drUser["state"]);
+            //    ud.Pincode = Convert.ToString(drUser["pincode"]);
 
-                ud.PanNumber = Convert.ToString(drUser["pannumber"]);
-                ud.BankAccountNumber = Convert.ToString(drUser["bankaccountnumber"]);
-                ud.BankPayCardNumber = Convert.ToString(drUser["bankpaycardnumber"]);
+            //    ud.PanNumber = Convert.ToString(drUser["pannumber"]);
+            //    ud.BankAccountNumber = Convert.ToString(drUser["bankaccountnumber"]);
+            //    ud.BankPayCardNumber = Convert.ToString(drUser["bankpaycardnumber"]);
                 
                 
-                Session["userdata"] = ud;
-                //FormsAuthentication.RedirectFromLoginPage(ud.Name,false);
-                Response.Redirect("MyProfile.aspx");
-            }
+            //    Session["userdata"] = ud;
+            //    //FormsAuthentication.RedirectFromLoginPage(ud.Name,false);
+            //    Response.Redirect("MyProfile.aspx");
+            //}
 
             //string userId;
             ////userId= Conveert.ToString(Session["userid"]);

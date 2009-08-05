@@ -39,11 +39,11 @@ public partial class userControls_LeftColumn : System.Web.UI.UserControl
     {
         string username = tbLoginName.Text;
         string password = tbPassword.Text;
-        password = "admin";
+        //password = "admin";
 
 
-        JayahoIndiaDSTableAdapters.spValidateUserTableAdapter objta = new JayahoIndiaDSTableAdapters.spValidateUserTableAdapter();
-        JayahoIndiaDS.spValidateUserDataTable objSvudt = objta.GetData(username, password);
+        JayahoIndiaDSTableAdapters.UserDataTableAdapter objta = new JayahoIndiaDSTableAdapters.UserDataTableAdapter();
+        JayahoIndiaDS.UserDataDataTable objSvudt = objta.GetUserData(username, password);
 
         if (objSvudt.Rows.Count == 0)
         {
@@ -57,7 +57,7 @@ public partial class userControls_LeftColumn : System.Web.UI.UserControl
             ud.UserId = Convert.ToString(drUser["userId"]);
             ud.Name = Convert.ToString(drUser["name"]);
             ud.Address = Convert.ToString(drUser["address"]);
-            ud.Place = Convert.ToString(drUser["place"]);
+            //ud.Place = Convert.ToString(drUser["place"]);
             ud.State = Convert.ToString(drUser["state"]);
             ud.Pincode = Convert.ToString(drUser["pincode"]);
 
