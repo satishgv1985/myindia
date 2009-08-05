@@ -2,13 +2,13 @@
     CodeFile="SignUp.aspx.cs" Inherits="SignUp" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table>
+    <table style="margin-left: 15px; width: 95%">
         <tr>
             <td valign="top" style="width: 545px;">
                 <div class="subheading2">
                     Register</div>
                 <div class="text">
-                    With your efforts and our knowledge, the Ads On Mobile .biz opportunity can become
+                    With your efforts and our knowledge, the opportunity can become
                     everything from a means of earning a little extra cash to building an international
                     business. Please Register with us today
                 </div>
@@ -25,8 +25,8 @@
                                                         <tr>
                                                             <td colspan="2">
                                                                 <br />
-                                                                <span style="color: rgb(255, 0, 0);">* </span><strong>Mandatory Fields </strong>
-                                                                <span style="color: White;" id="ctl00_ContentPlaceHolder1_reg1_lblmsg" />
+                                                                <span style="color: rgb(255, 0, 0);">* </span><strong>Mandatory Fields </strong><br />
+                                                                <asp:Label ID="lblUserMessage"  ForeColor="red" runat="server" ></asp:Label>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -37,7 +37,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td align="right">
-                                                                Introducer Id</td>
+                                                                Introducer User Name</td>
                                                             <td>
                                                                 <asp:TextBox ID="tbIntrodueId" runat="server"></asp:TextBox>
                                                                 <asp:RequiredFieldValidator ControlToValidate="tbIntrodueId" SetFocusOnError="true"
@@ -78,7 +78,7 @@
                                                                 Occupation
                                                             </td>
                                                             <td>
-                                                                <asp:TextBox ID="tdOccupation" runat="server"></asp:TextBox>
+                                                                <asp:TextBox ID="tbOccupation" runat="server"></asp:TextBox>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -87,13 +87,13 @@
                                                                     Personal Details</div>
                                                             </td>
                                                         </tr>
-                                                        <tr>
+                                                       <%-- <tr>
                                                             <td align="right">
                                                                 Date Of Birth</td>
                                                             <td>
                                                                 <asp:Calendar ID="calDOB" runat="server"></asp:Calendar>
                                                             </td>
-                                                        </tr>
+                                                        </tr>--%>
                                                         <tr>
                                                             <td align="right">
                                                                 Address
@@ -227,12 +227,21 @@
                                                         </tr>--%>
                                                         <tr>
                                                             <td align="right">
+                                                                UserName To Login
+                                                            </td>
+                                                            <td>
+                                                                <asp:TextBox ID="tbUserNameLogin" runat="server" Width="150px"></asp:TextBox>
+                                                                <asp:RequiredFieldValidator ID="rfvUserNameLogin" runat="server" ControlToValidate="tbUserNameLogin"
+                                                                    Text="Enter UserName"></asp:RequiredFieldValidator></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right">
                                                                 Password
                                                             </td>
                                                             <td>
                                                                 <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" Width="150px" meta:resourcekey="txtPasswordResource1"></asp:TextBox>
                                                                 <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="tbPassword"
-                                                                    Text="Enter Password"></asp:RequiredFieldValidator>
+                                                                    Text="Enter Password"></asp:RequiredFieldValidator></td>
                                                         </tr>
                                                         <tr>
                                                             <td nowrap="nowrap" align="right">
@@ -261,7 +270,7 @@
                                                                 Secret Answer
                                                             </td>
                                                             <td>
-                                                                <asp:TextBox ID="tbSecretAnswer" runat="server" TextMode="Password" Width="150px"></asp:TextBox>
+                                                                <asp:TextBox ID="tbSecretAnswer" runat="server" Width="150px"></asp:TextBox>
                                                                 <asp:RequiredFieldValidator ID="rfvSecretAnswer" runat="server" ControlToValidate="tbSecretAnswer"
                                                                     Text="Enter Secret Answer"></asp:RequiredFieldValidator>
                                                             </td>
@@ -288,7 +297,7 @@
                                                             <td>
                                                             </td>
                                                             <td>
-                                                                <asp:LinkButton ID="lbSubmit" runat="server" Text="Submit"></asp:LinkButton>
+                                                                <asp:LinkButton ID="lbSubmit" runat="server" Text="Submit" OnClick="lbSubmit_Click"></asp:LinkButton>
                                                             </td>
                                                         </tr>
                                                     </tbody>

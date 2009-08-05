@@ -22,49 +22,51 @@
                             </p>
                         </div>--%>
     <div>
-        <img src="original/customerlogin.gif"></div>
+        <img src="original/customerlogin.gif" /></div>
     <table cellpadding="3" style="border: 1px solid #d8d8d8; padding: 3px; margin-top: 5px;
         width: 97%;">
         <tr>
-                    <td >
-                        <asp:Label Text="User Logged Out Successfully" ID="lblUserLogout" runat="server"
-                            ForeColor="Red"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td >
-                        <asp:Label Text="Invalid Loginname or Password" ID="lblInvalidError" runat="server"
-                            ForeColor="Red"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Login Name:<br />
-                    
-                        <asp:TextBox ID="tbLoginName" runat="server" Text="admin" Width="150px"></asp:TextBox>
-                        <asp:RequiredFieldValidator ControlToValidate="tbLoginName" SetFocusOnError="true"
-                            ID="rfvLoginName" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Password:
-                    <br />
-                        <asp:TextBox ID="tbPassword" runat="server" Text="" TextMode="Password" Width="150px"></asp:TextBox>
-                        <asp:RequiredFieldValidator ControlToValidate="tbPassword" SetFocusOnError="true"
-                            ID="rfvPassword" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-        <tr>
             <td>
-                <asp:LinkButton ID="lbLogin"  runat="server" CssClass="loginbutton" Width="70px" OnClick="lbLogin_Click" CausesValidation="true"></asp:LinkButton>
+                <asp:Label Text="User Logged Out Successfully" ID="lblUserLogout" runat="server"
+                    ForeColor="Red"></asp:Label>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="normalText" Text="ForgotPassword"></asp:LinkButton><br />
-                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="normalText" Text="NewUser. Sign Up Now"></asp:LinkButton>
-                </td>
+                <asp:Label Text="Invalid Loginname or Password" ID="lblInvalidError" runat="server"
+                    ForeColor="Red"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Login Name:<br />
+                <asp:TextBox ID="tbLoginName" runat="server" Text="admin" Width="150px"></asp:TextBox>
+                <asp:RequiredFieldValidator ControlToValidate="tbLoginName" SetFocusOnError="true"
+                    ID="rfvLoginName" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+                <br />
+                <asp:TextBox ID="tbPassword" runat="server" Text="" TextMode="Password" Width="150px"></asp:TextBox>
+                <asp:RequiredFieldValidator ControlToValidate="tbPassword" SetFocusOnError="true"
+                    ID="rfvPassword" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:LinkButton ID="lbLogin" runat="server" CssClass="loginbutton" Width="70px" Text="Login"
+                    OnClick="lbLogin_Click" CausesValidation="true"></asp:LinkButton>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:LinkButton ID="lbForgotPassword" runat="server" CssClass="normalText" Text="ForgotPassword"
+                    CausesValidation="false"></asp:LinkButton><br />
+                <asp:LinkButton ID="lbNewUserSignUp" runat="server" CssClass="normalText" Text="NewUser. Sign Up Now"
+                    CausesValidation="false"></asp:LinkButton>
+            </td>
         </tr>
     </table>
     <%--  <p style="padding-left: 10px;">

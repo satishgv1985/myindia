@@ -2,7 +2,7 @@
     CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table style="padding-left: 15px; width: 100%">
+    <table style="margin-left: 15px; width: 95%">
         <tr>
             <td class="subheading2">
                 Contact Us</td>
@@ -89,22 +89,22 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td valign="top">
                                         Message:</td>
                                     <td>
-                                        <textarea onkeypress="if(this.value.length>=60) return false;" cols="30" rows="5"
-                                            name="ctl00$ContentPlaceHolder1$contact1$txtmsg" />
+                                        <asp:TextBox ID="tbMessage" runat="server" TextMode="multiLine" Columns="15" Width="200"
+                                            Height="100"></asp:TextBox>
                                         <%--
                                             <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_RequiredFieldValidator3">
                                                 Please Enter Message</span>--%>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <input type="submit" style="width: 60px;" class="button" id="ctl00_ContentPlaceHolder1_contact1_butSubmit"
-                                            value="Submit" name="ctl00$ContentPlaceHolder1$contact1$butSubmit" />
+                                    <td colspan="2" style="text-align: center">
                                         <br />
-                                        <span style="color: White;" id="ctl00_ContentPlaceHolder1_contact1_lblmsg" />
+                                        <asp:Button ID="btnSubmitMessage" runat="server" Text="Submit" />
+                                        <br />
+                                        <%-- <span style="color: White;" id="ctl00_ContentPlaceHolder1_contact1_lblmsg" />--%>
                                     </td>
                                 </tr>
                             </table>
