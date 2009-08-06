@@ -207,7 +207,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                        <%--        <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -221,7 +221,7 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
+                                                </tr>--%>
                                             <%--    <tr>
                                                     <td width="200">
                                                         <table>
@@ -252,7 +252,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                             <%--   <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -266,7 +266,7 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
+                                                </tr>--%>
                                                 <tr>
                                                     <td width="200">
                                                         <table>
@@ -282,7 +282,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                         <%--       <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -296,7 +296,7 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
+                                                </tr>--%>
                                                 <tr>
                                                     <td width="200">
                                                         <table>
