@@ -81,24 +81,13 @@
                                             </tr>
                                             <tr>
                                                 <td class="navigator" width="169" height="35">
-                                                    <b>A/C No.</b>
+                                                    <b>Occupation</b>
                                                 </td>
                                                 <td class="navigator" width="21" background="files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
-                                                    <asp:Label ID="lblAccountNo" runat="server"></asp:Label>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="navigator" height="35">
-                                                    <b>Mobile No. </b>
-                                                </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
-                                                    &nbsp;
-                                                </td>
-                                                <td class="navigator_normal">
-                                                    <asp:Label ID="lblMobileNo" runat="server"></asp:Label>
+                                                    <asp:Label ID="lblOccupation" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -110,8 +99,50 @@
                                                 </td>
                                                 <td class="navigator_normal">
                                                     <asp:Label ID="lblAddress" runat="server"></asp:Label>
-                                                    <br>
-                                                    <a href="/ChangeBillingAddressAction.do">Click here</a> to change the Address.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" valign="top">
+                                                    <b>City </b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblCity" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" valign="top">
+                                                    <b>State </b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblState" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" valign="top">
+                                                    <b>District </b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblDistrict" runat="server"></asp:Label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" valign="top">
+                                                    <b>Pin Code </b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblPinCode" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -125,8 +156,17 @@
                                                     <br>
                                                     <br>
                                                     <asp:Label ID="lblEmailAddress" runat="server"></asp:Label>
-                                                    <br>
-                                                    <a href="/MyProfileAction.do">Click here</a> to change your E-mail Address.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="navigator" height="35">
+                                                    <b>Mobile No. </b>
+                                                </td>
+                                                <td class="navigator" width="21" background="files/line.gif">
+                                                    &nbsp;
+                                                </td>
+                                                <td class="navigator_normal">
+                                                    <asp:Label ID="lblMobileNo" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <%--<tr>
@@ -145,13 +185,13 @@
                                             </tr>--%>
                                             <tr>
                                                 <td class="navigator">
-                                                    <b>Activation Date </b>
+                                                    <b>Pin Activation Date </b>
                                                 </td>
                                                 <td class="navigator" width="21" background="files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
-                                                    <asp:Label ID="lblActivationDate" runat="server"></asp:Label>
+                                                    <asp:Label ID="lblPinActivationDate" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
                                             <%--     <tr>
@@ -229,7 +269,7 @@
                                                     <a href="#" onclick="unBilledPopUpFun()"><b><u>Click here </u></b></a>to view approximate
                                                     Unbilled Amount.<!--COFI9223 changes on May'04-->
                                                 </td>
-                                            </tr>--%>
+                                            </tr>
                                             <tr>
                                                 <td class="navigator" height="35">
                                                     <b>Deposit Amount (Rs) </b>
@@ -242,7 +282,7 @@
                                                 </td>
                                             </tr>
                                             <!-- COCC3286 start -->
-                                            <%-- <tr class="navigator_normal">
+                                             <tr class="navigator_normal">
                                                 <td height="35">
                                                     <b>&nbsp;&nbsp;Internet Usage Meter</b>
                                                 </td>
@@ -305,7 +345,6 @@
                                                     <asp:Label ID="lblPayCardNo" runat="server"></asp:Label>
                                                 </td>
                                             </tr>
-                                            
                                             <tr>
                                                 <td height="15">
                                                     &nbsp;

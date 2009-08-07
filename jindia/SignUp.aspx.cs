@@ -57,7 +57,7 @@ public partial class SignUp : System.Web.UI.Page
         //udNewUser.NomineeName = tbNominee.Text;
         //udNewUser.NomineeRelation = tbNomineeRelation.Text;
 
-        JayahoIndiaDSTableAdapters.UserDataTableAdapter udta = new JayahoIndiaDSTableAdapters.UserDataTableAdapter();
+        //JayahoIndiaDSTableAdapters.UserDataTableAdapter udta = new JayahoIndiaDSTableAdapters.UserDataTableAdapter();
         //JayahoIndiaDS.UserDataDataTable uddtUserIntroducerCheck = udta.GetUserDataTableByUserName(tbIntrodueId.Text);
         //JayahoIndiaDS.UserDataDataTable uddtUserCheck = udta.GetUserDataTableByUserName(tbUserNameLogin.Text);
 
