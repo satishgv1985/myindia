@@ -56,10 +56,14 @@ public partial class userControls_LeftColumn : System.Web.UI.UserControl
             UserData ud = new UserData();
             ud.UserId = Convert.ToString(drUser["userId"]);
             ud.Name = Convert.ToString(drUser["name"]);
+            ud.Occupation = Convert.ToString(drUser["occupation"]);
             ud.Address = Convert.ToString(drUser["address"]);
-            //ud.Place = Convert.ToString(drUser["place"]);
+            ud.City = Convert.ToString(drUser["City"]);
             ud.State = Convert.ToString(drUser["state"]);
+            ud.District = Convert.ToString(drUser["District"]);
             ud.Pincode = Convert.ToString(drUser["pincode"]);
+            ud.EmailId = Convert.ToString(drUser["EmailId"]);
+            ud.MobileNo = Convert.ToString(drUser["MobileNo"]);
 
             ud.PanNumber = Convert.ToString(drUser["pannumber"]);
             ud.BankAccountNumber = Convert.ToString(drUser["bankaccountnumber"]);

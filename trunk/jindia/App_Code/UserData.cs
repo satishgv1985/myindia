@@ -7,6 +7,7 @@ namespace JayahoIndia
         private string _userName;
         private string _password;
         private string _name;
+        private string _occupation;
         private string _address;
         private string _city;
         private string _state;
@@ -45,6 +46,12 @@ namespace JayahoIndia
         {
             get { return _name; }
             set { _name = value; }
+        }
+
+        public string Occupation
+        {
+            get { return _occupation; }
+            set { _occupation = value; }
         }
 
         public string Address

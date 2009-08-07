@@ -22,6 +22,7 @@ namespace JayahoIndia
                 lblCustomerName.Text = ud.Name;
                 lblAddress.Text = ud.Address;
                 
+   
             }
         }
     }
