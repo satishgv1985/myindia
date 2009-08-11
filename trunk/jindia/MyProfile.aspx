@@ -299,8 +299,7 @@
                                                 <td height="15">
                                                     &nbsp;
                                                 </td>
-                                                <!-- <td >&nbsp;</td>
-                                  <td>&nbsp;</td> -->
+                                               
                                             </tr>
                                         </table>
                                     </td>
@@ -311,7 +310,8 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <table width="568" border="0" cellpadding="0" cellspacing="0">
+                                        <table width="568" id="tableBankInformation" runat="server" border="0" cellpadding="0"
+                                            cellspacing="0">
                                             <tr>
                                                 <td class="navigator" width="200" height="35">
                                                     <b>PAN Number</b>
@@ -349,8 +349,13 @@
                                                 <td height="15">
                                                     &nbsp;
                                                 </td>
-                                                <!-- <td >&nbsp;</td>
-                                  <td>&nbsp;</td> -->
+                                                
+                                            </tr>
+                                        </table>
+                                        <table id="tableUpdateBankInformation" runat="server" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td>
+                                                    <a href="updateBankDetails.aspx">Please Update Your Bank Information. Click Here.</a></td>
                                             </tr>
                                         </table>
                                     </td>
