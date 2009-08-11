@@ -62,9 +62,9 @@
         </tr>
         <tr>
             <td>
-                <asp:LinkButton ID="lbForgotPassword" runat="server" CssClass="normalText" Text="ForgotPassword"
+                <asp:LinkButton ID="lbForgotPassword" runat="server" PostBackUrl="~/ForgotPassword.aspx" CssClass="normalText" Text="ForgotPassword"
                     CausesValidation="false"></asp:LinkButton><br />
-                <asp:LinkButton ID="lbNewUserSignUp" runat="server" CssClass="normalText" Text="NewUser. Sign Up Now"
+                <asp:LinkButton ID="lbNewUserSignUp" runat="server" PostBackUrl="~/SignUp.aspx" CssClass="normalText" Text="NewUser. Sign Up Now"
                     CausesValidation="false"></asp:LinkButton>
             </td>
         </tr>

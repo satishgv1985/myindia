@@ -56,7 +56,7 @@ public partial class userControls_LeftColumn : System.Web.UI.UserControl
             UserData ud = new UserData();
             ud.UserId = Convert.ToString(drUser["userId"]);
             ud.Name = Convert.ToString(drUser["name"]);
-            ud.Occupation = Convert.ToString(drUser["occupation"]);
+            //ud.Occupation = Convert.ToString(drUser["occupation"]);
             ud.Address = Convert.ToString(drUser["address"]);
             ud.City = Convert.ToString(drUser["City"]);
             ud.State = Convert.ToString(drUser["state"]);
