@@ -32,7 +32,7 @@
         </tr>
         <tr>
             <td align="center" colspan="4">
-                <asp:GridView runat="server" ID="gvTreeViewLeft" EmptyDataText="Empty" AutoGenerateColumns="false" OnRowDataBound="gvTreeViewLeft_RowDataBound">
+                <asp:GridView runat="server" ID="gvTreeViewLeft" EmptyDataText="Empty" AutoGenerateColumns="false" OnRowDataBound="gvTreeViewLeft_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -42,10 +42,10 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev1.png" id="ctl00_ContentPlaceHolder1_uctreeview_img21" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev1.png" id="img1left" />
             </td>
             <td align="center" colspan="4">
-                <asp:GridView runat="server" ID="gvTreeViewRight" EmptyDataText="Empty" AutoGenerateColumns="false" OnRowDataBound="gvTreeViewRight_RowDataBound">
+                <asp:GridView runat="server" ID="gvTreeViewRight" EmptyDataText="Empty" AutoGenerateColumns="false" OnRowDataBound="gvTreeViewRight_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -55,7 +55,7 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev1.png" id="ctl00_ContentPlaceHolder1_uctreeview_img22" />
+                <asp:Image runat="server" style="border-width: 0px;" ImageUrl="man/lev1.png" id="img1right" />
             </td>
         </tr>
         <tr>
@@ -65,7 +65,7 @@
         <tr>
             <td align="center" colspan="2">
                 <asp:GridView runat="server" ID="gvTreeView21left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView21left_RowDataBound">
+                    OnRowDataBound="gvTreeView21left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -75,10 +75,10 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev3.png" id="ctl00_ContentPlaceHolder1_uctreeview_img31" /></td>
+                <asp:Image runat="server" style="border-width: 0px;" ImageUrl="man/lev3.png" id="img21left" /></td>
             <td align="center" colspan="2">
                 <asp:GridView runat="server" ID="gvTreeView22Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView22Right_RowDataBound">
+                    OnRowDataBound="gvTreeView22Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -88,11 +88,11 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev3.png" id="ctl00_ContentPlaceHolder1_uctreeview_img32" />
+                <asp:Image runat="server" style="border-width: 0px;" ImageUrl="man/lev3.png" id="img22right" />
             </td>
             <td align="center" colspan="2">
                 <asp:GridView runat="server" ID="gvTreeView23Left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView23Left_RowDataBound">
+                    OnRowDataBound="gvTreeView23Left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -102,11 +102,11 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev3.png" id="ctl00_ContentPlaceHolder1_uctreeview_img33" />
+                <asp:Image style="border-width: 0px;" ImageUrl="~/man/lev3.png" runat="server" id="img23left" />
             </td>
             <td align="center" colspan="2">
                 <asp:GridView runat="server" ID="gvTreeView24Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView24Right_RowDataBound">
+                    OnRowDataBound="gvTreeView24Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -116,7 +116,7 @@
                     </Columns>
                 </asp:GridView>
                 <br />
-                <img style="border-width: 0px;" src="man/lev3.png" id="ctl00_ContentPlaceHolder1_uctreeview_img34" />
+                <asp:Image runat="server" style="border-width: 0px;" ImageUrl="man/lev3.png" id="img24right" />
             </td>
         </tr>
         <tr>
@@ -126,7 +126,7 @@
         <tr>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView31Left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView31Left_RowDataBound">
+                    OnRowDataBound="gvTreeView31Left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -137,11 +137,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img41" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img31left" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView32Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView32Right_RowDataBound">
+                    OnRowDataBound="gvTreeView32Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -152,11 +152,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img42" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img32right" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView33Left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView33Left_RowDataBound">
+                    OnRowDataBound="gvTreeView33Left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -167,11 +167,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4b.png" id="ctl00_ContentPlaceHolder1_uctreeview_img43" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4b.png" id="img33left" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView34Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView34Right_RowDataBound">
+                    OnRowDataBound="gvTreeView34Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -182,11 +182,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img44" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img34right" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView35Left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView35Left_RowDataBound">
+                    OnRowDataBound="gvTreeView35Left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -197,11 +197,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img45" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img35left" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView36Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView36Right_RowDataBound">
+                    OnRowDataBound="gvTreeView36Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -212,11 +212,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img46" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img36right" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView37Left" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView37Left_RowDataBound">
+                    OnRowDataBound="gvTreeView37Left_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -227,11 +227,11 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img47" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img37left" />
             </td>
             <td align="center">
                 <asp:GridView runat="server" ID="gvTreeView38Right" EmptyDataText="Empty" AutoGenerateColumns="false"
-                    OnRowDataBound="gvTreeView38Right_RowDataBound">
+                    OnRowDataBound="gvTreeView38Right_RowDataBound" OnRowCommand="Common_CommandEventArgs">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
@@ -242,7 +242,7 @@
                 </asp:GridView>
                 <br />
                 <br />
-                <img style="border-width: 0px;" src="man/lev4.png" id="ctl00_ContentPlaceHolder1_uctreeview_img48" />
+                <asp:Image style="border-width: 0px;" runat="server" ImageUrl="man/lev4.png" id="img38right" />
             </td>
         </tr>
     </table>

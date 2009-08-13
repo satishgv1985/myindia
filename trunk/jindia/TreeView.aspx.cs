@@ -22,7 +22,13 @@ public partial class TreeView : System.Web.UI.Page
         {
             if (!IsPostBack)
             {
-                SqlGuid id = new SqlGuid("82403D57-DBC3-4D2F-B990-383A59582174");
+                SqlGuid id;
+                if (Request.QueryString["ID"] == null)
+                    id = new SqlGuid("82403D57-DBC3-4D2F-B990-383A59582174");
+                else
+                    id = new SqlGuid(Request.QueryString["ID"]);
+                lnkRoot.Text = GetUserNameById(id);
+                lnkRoot.CommandName = Convert.ToString(id);
                 List<UserData> _usersleft = GetLeftChild(id);
                 gvTreeViewLeft.DataSource = _usersleft;
                 gvTreeViewLeft.DataBind();
@@ -31,6 +37,13 @@ public partial class TreeView : System.Web.UI.Page
                 gvTreeViewRight.DataBind();
                 if (_usersright.Count == 0)
                 {
+                    img1right.ImageUrl = "~/man/lev2b.gif";
+                    img23left.ImageUrl = "~/man/lev3b.png";
+                    img24right.ImageUrl = "~/man/lev3b.png";
+                    img35left.ImageUrl = "~/man/lev4b.png";
+                    img36right.ImageUrl = "~/man/lev4b.png";
+                    img37left.ImageUrl = "~/man/lev4b.png";
+                    img38right.ImageUrl = "~/man/lev4b.png";
                     gvTreeView23Left.DataSource = _usersright;
                     gvTreeView23Left.DataBind();
                     gvTreeView24Right.DataSource = _usersright;
@@ -46,6 +59,13 @@ public partial class TreeView : System.Web.UI.Page
                 }
                 if (_usersleft.Count == 0)
                 {
+                    img1left.ImageUrl = "~/man/lev2b.gif";
+                    img21left.ImageUrl = "~/man/lev3b.png";
+                    img22right.ImageUrl = "~/man/lev3b.png";
+                    img31left.ImageUrl = "~/man/lev4b.png";
+                    img32right.ImageUrl = "~/man/lev4b.png";
+                    img33left.ImageUrl = "~/man/lev4b.png";
+                    img34right.ImageUrl = "~/man/lev4b.png";
                     gvTreeView21left.DataSource = _usersleft;
                     gvTreeView21left.DataBind();
                     gvTreeView22Right.DataSource = _usersleft;
@@ -73,6 +93,17 @@ public partial class TreeView : System.Web.UI.Page
         }
 
 
+    }
+
+    private string GetUserNameById(SqlGuid id)
+    {
+        SqlCommand cmd = new SqlCommand("GetUserNameById", cn);
+        cmd.CommandType = CommandType.StoredProcedure;
+        cmd.Parameters.Add("@userId", SqlDbType.UniqueIdentifier).Value = id;
+        cn.Open();
+        string Name=Convert.ToString(cmd.ExecuteScalar());
+        cn.Close();
+        return Name;
     }
 
     public List<UserData> GetLeftChild(SqlGuid parentId)
@@ -131,6 +162,10 @@ public partial class TreeView : System.Web.UI.Page
             gvTreeView22Right.DataBind();
             if (_usersLeft.Count == 0)
             {
+                img21left.ImageUrl = "~/man/lev3b.png";
+                img31left.ImageUrl = "~/man/lev4b.png";
+                img32right.ImageUrl = "~/man/lev4b.png";
+                
                 gvTreeView31Left.DataSource = _usersLeft;
                 gvTreeView31Left.DataBind();
                 gvTreeView32Right.DataSource = _usersLeft;
@@ -138,6 +173,9 @@ public partial class TreeView : System.Web.UI.Page
             }
             if (_usersRight.Count == 0)
             {
+                img22right.ImageUrl = "~/man/lev3b.png";
+                img33left.ImageUrl = "~/man/lev4b.png";
+                img34right.ImageUrl = "~/man/lev4b.png";
                 gvTreeView33Left.DataSource = _usersRight;
                 gvTreeView33Left.DataBind();
                 gvTreeView34Right.DataSource = _usersRight;
@@ -164,6 +202,9 @@ public partial class TreeView : System.Web.UI.Page
             gvTreeView24Right.DataBind();
             if (_usersLeft.Count == 0)
             {
+                img23left.ImageUrl = "~/man/lev3b.png";
+                img35left.ImageUrl = "~/man/lev4b.png";
+                img36right.ImageUrl = "~/man/lev4b.png";
                 gvTreeView35Left.DataSource = _usersLeft;
                 gvTreeView35Left.DataBind();
                 gvTreeView36Right.DataSource = _usersLeft;
@@ -171,6 +212,9 @@ public partial class TreeView : System.Web.UI.Page
             }
             if (_usersRight.Count == 0)
             {
+                img24right.ImageUrl = "~/man/lev3b.png";
+                img37left.ImageUrl = "~/man/lev4b.png";
+                img38right.ImageUrl = "~/man/lev4b.png";
                 gvTreeView37Left.DataSource = _usersRight;
                 gvTreeView37Left.DataBind();
                 gvTreeView38Right.DataSource = _usersRight;
@@ -186,10 +230,18 @@ public partial class TreeView : System.Web.UI.Page
             LinkButton lnkChild21left = (LinkButton)e.Row.FindControl("lnkChild21left");
             lnkChild21left.Text = _user.UserName;
             lnkChild21left.CommandName = _user.UserId;
-            gvTreeView31Left.DataSource = GetLeftChild(new SqlGuid(_user.UserId));
+            List<UserData> _usersLeft = new List<UserData>();
+            _usersLeft = GetLeftChild(new SqlGuid(_user.UserId));
+            gvTreeView31Left.DataSource = _usersLeft;
             gvTreeView31Left.DataBind();
-            gvTreeView32Right.DataSource = GetRightChild(new SqlGuid(_user.UserId));
+            if(_usersLeft.Count==0)
+                img31left.ImageUrl = "~/man/lev4b.png";
+            List<UserData> _usersRight = new List<UserData>();
+            _usersRight = GetRightChild(new SqlGuid(_user.UserId));
+            gvTreeView32Right.DataSource = _usersRight;
             gvTreeView32Right.DataBind();
+            if(_usersRight.Count==0)
+                img32right.ImageUrl = "~/man/lev4b.png";
         }
     }
     protected void gvTreeView22Right_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -200,10 +252,18 @@ public partial class TreeView : System.Web.UI.Page
             LinkButton lnkChild22Right = (LinkButton)e.Row.FindControl("lnkChild22Right");
             lnkChild22Right.Text = _user.UserName;
             lnkChild22Right.CommandName = _user.UserId;
-            gvTreeView33Left.DataSource = GetLeftChild(new SqlGuid(_user.UserId));
+            List<UserData> _usersLeft = new List<UserData>();
+            _usersLeft = GetLeftChild(new SqlGuid(_user.UserId));
+            gvTreeView33Left.DataSource = _usersLeft;
             gvTreeView33Left.DataBind();
-            gvTreeView34Right.DataSource = GetRightChild(new SqlGuid(_user.UserId));
+            if (_usersLeft.Count == 0)
+                img33left.ImageUrl = "~/man/lev4b.png";
+            List<UserData> _usersRight = new List<UserData>();
+            _usersRight = GetRightChild(new SqlGuid(_user.UserId));
+            gvTreeView34Right.DataSource = _usersRight;
             gvTreeView34Right.DataBind();
+            if (_usersRight.Count == 0)
+                img34right.ImageUrl = "~/man/lev4b.png";
         }
     }
     protected void gvTreeView23Left_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -214,10 +274,18 @@ public partial class TreeView : System.Web.UI.Page
             LinkButton lnkChild23Left = (LinkButton)e.Row.FindControl("lnkChild23Left");
             lnkChild23Left.Text = _user.UserName;
             lnkChild23Left.CommandName = _user.UserId;
-            gvTreeView35Left.DataSource = GetLeftChild(new SqlGuid(_user.UserId));
+            List<UserData> _usersLeft = new List<UserData>();
+            _usersLeft = GetLeftChild(new SqlGuid(_user.UserId));
+            gvTreeView35Left.DataSource = _usersLeft;
             gvTreeView35Left.DataBind();
-            gvTreeView36Right.DataSource = GetRightChild(new SqlGuid(_user.UserId));
+            if (_usersLeft.Count == 0)
+                img35left.ImageUrl = "~/man/lev4b.png";
+            List<UserData> _usersRight = new List<UserData>();
+            _usersRight = GetRightChild(new SqlGuid(_user.UserId));
+            gvTreeView36Right.DataSource = _usersRight;
             gvTreeView36Right.DataBind();
+            if (_usersRight.Count == 0)
+                img36right.ImageUrl = "~/man/lev4b.png";
         }
     }
     protected void gvTreeView24Right_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -228,10 +296,18 @@ public partial class TreeView : System.Web.UI.Page
             LinkButton lnkChild24Right = (LinkButton)e.Row.FindControl("lnkChild24Right");
             lnkChild24Right.Text = _user.UserName;
             lnkChild24Right.CommandName = _user.UserId;
-            gvTreeView37Left.DataSource = GetLeftChild(new SqlGuid(_user.UserId));
+            List<UserData> _usersLeft = new List<UserData>();
+            _usersLeft = GetLeftChild(new SqlGuid(_user.UserId));
+            gvTreeView37Left.DataSource = _usersLeft;
             gvTreeView37Left.DataBind();
-            gvTreeView38Right.DataSource = GetRightChild(new SqlGuid(_user.UserId));
+            if (_usersLeft.Count == 0)
+                img37left.ImageUrl = "~/man/lev4b.png";
+            List<UserData> _usersRight = new List<UserData>();
+            _usersRight = GetRightChild(new SqlGuid(_user.UserId));
+            gvTreeView38Right.DataSource = _usersRight;
             gvTreeView38Right.DataBind();
+            if (_usersRight.Count == 0)
+                img38right.ImageUrl = "~/man/lev4b.png";
         }
     }
     protected void gvTreeView31Left_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -313,5 +389,9 @@ public partial class TreeView : System.Web.UI.Page
             lnkChild38Right.Text = _user.UserName;
             lnkChild38Right.CommandName = _user.UserId;
         }
+    }
+    protected void Common_CommandEventArgs(object sender, GridViewCommandEventArgs e)
+    {
+        Response.Redirect("Treeview.aspx?ID=" + e.CommandName);
     }
 }
