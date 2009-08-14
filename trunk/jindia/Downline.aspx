@@ -13,6 +13,8 @@
                                     <td align="left" colspan="2">
                                         <img height="10" width="10" src="images/bullets_14.gif" />
                                         <span id="ctl00_lbltitle"><b><u>Downline Summary</u></b></span>
+                                        <asp:GridView ID="GridView1" runat="server">
+                                        </asp:GridView>
                                     </td>
                                   <%--  <td align="right" class="h2">
                                         Welcome, <span id="ctl00_lblid">zatoichi</span>
