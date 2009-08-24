@@ -2,7 +2,7 @@
     CodeFile="AboutUs.aspx.cs" Inherits="AboutUs" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table style="padding-left: 15px; padding-right: 15px;" width="100%">
+    <table style="margin-left: 15px;" width="96%">
         <tr>
             <td class="subheading2">
                 About Us</td>
