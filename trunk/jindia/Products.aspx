@@ -2,7 +2,7 @@
     CodeFile="Products.aspx.cs" Inherits="Products" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table cellspacing="0" cellpadding="0" width="100%" class="text" style="padding-left:15px;">
+    <table cellspacing="0" cellpadding="0" class="text" style="margin-left: 15px;" width="96%">
         <tbody>
             <tr>
                 <td class="subheading2">

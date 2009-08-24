@@ -2,7 +2,7 @@
     CodeFile="Advertise.aspx.cs" Inherits="Advertise" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table style="margin-left:15px; width:95%">
+    <table style="margin-left: 15px;" width="96%">
         <tr>
             <td valign="top" >
                 <div class="subheading2">

@@ -2,7 +2,7 @@
     CodeFile="BusinessPlan.aspx.cs" Inherits="BusinessPlan" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table width="100%" class="text" style="margin-left: 15px;">
+    <table class="text" style="margin-left: 15px;" width="96%">
         <tr>
             <td class="subheading2">
                 Business Plan</td>
