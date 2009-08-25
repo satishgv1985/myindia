@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true"
+<%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true"
     CodeFile="MyProfile.aspx.cs" Inherits="JayahoIndia.MyProfile" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
@@ -352,12 +352,7 @@
                                                 
                                             </tr>
                                         </table>
-                                        <table id="tableUpdateBankInformation" runat="server" cellpadding="0" cellspacing="0" border="0">
-                                            <tr>
-                                                <td>
-                                                    <a href="updateBankDetails.aspx">Please Update Your Bank Information. Click Here.</a></td>
-                                            </tr>
-                                        </table>
+                                        
                                     </td>
                                 </tr>
                             </table>

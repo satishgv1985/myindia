@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="PhoneBook.aspx.cs" Inherits="PhoneBook" Title="Untitled Page" %>
+<%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true" CodeFile="PhoneBook.aspx.cs" Inherits="PhoneBook" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" Runat="Server">
 <table cellspacing="0" cellpadding="0" border="0" class="text_1">
 <tbody>

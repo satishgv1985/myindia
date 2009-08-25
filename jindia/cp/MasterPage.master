@@ -2,13 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link href="files/stylesheet.css" rel="stylesheet" type="text/css">
     <title>website layout</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <link href="ourAssets/styles.css" rel="Stylesheet" type="text/css" />
-    <script type="text/javascript">
+    <link href="styles.css" rel="Stylesheet" type="text/css" />
     
-    </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -30,7 +26,7 @@
                                             <div id="header_row2">
                                                 <div id="tplft">
                                                     <a href="#">
-                                                        <img src="ourAssets/JayahoIndia-Logo.jpg" alt="Jayaho India" width="300" height="84"></a></div>
+                                                        <img src="../ourAssets/JayahoIndia-Logo.jpg" alt="Jayaho India" width="300" height="84"></a></div>
                                             </div>
                                         </td>
                                     </tr>
@@ -78,7 +74,7 @@
                                                             <tr>
                                                                 <td valign="bottom" height="18">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="default.aspx">Home</a>
@@ -93,7 +89,7 @@
                                                             <tr>
                                                                 <td valign="bottom" height="18">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="myprofile.aspx">My Profile</a>
@@ -108,7 +104,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="sendSMS.aspx">Send SMS</a>
@@ -123,7 +119,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td valign="top">
                                                                     <a class="buttonbgfont" href="mybusiness.aspx">My Business</a>
@@ -153,7 +149,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="Downline.aspx">Downline</a>
@@ -183,7 +179,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="treeview.aspx">Tree View</a>
@@ -198,7 +194,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="ledger.aspx">Ledger</a>
@@ -243,7 +239,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="paymentreport.aspx">Payment Report</a>
@@ -273,7 +269,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="paycardactivation.aspx">Pay Card Activation</a>
@@ -303,7 +299,7 @@
                                                             <tr>
                                                                 <td height="25">
                                                                     &nbsp;
-                                                                    <img src="ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
+                                                                    <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
                                                                     <a class="buttonbgfont" href="helpdesk.aspx">Help Desk</a>

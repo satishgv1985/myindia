@@ -16,10 +16,11 @@ namespace JayahoIndia
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
-                UserData ud = (UserData) Session["userdata"];
+                UserData ud = (UserData)Session["userdata"];
                 lblCustomerName.Text = ud.Name;
+                lblOccupation.Text = Convert.ToString(ud.Occupation);
                 lblAddress.Text = ud.Address;
                 lblCity.Text = ud.City;
                 lblState.Text = ud.State;
@@ -29,20 +30,10 @@ namespace JayahoIndia
                 lblMobileNo.Text = ud.MobileNo;
 
                 lblPinActivationDate.Text = Convert.ToString(ud.DateCreated);
+                lblPanNumber.Text = Convert.ToString(ud.PanNumber);
+                lblBankActNo.Text = Convert.ToString(ud.BankAccountNumber);
+                lblPayCardNo.Text = Convert.ToString(ud.BankPayCardNumber);
 
-                if (ud.BankAccountNumber=="-1")
-                {
-                    tableBankInformation.Visible = false;
-                    tableUpdateBankInformation.Visible = true;
-                }
-                else
-                {
-                    tableBankInformation.Visible = true;
-                    tableUpdateBankInformation.Visible = false;
-                }
-                
-
-   
             }
         }
     }

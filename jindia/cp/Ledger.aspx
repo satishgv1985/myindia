@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Ledger.aspx.cs" Inherits="Ledger" Title="Untitled Page" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true" CodeFile="Ledger.aspx.cs" Inherits="Ledger" Title="Untitled Page" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" Runat="Server">
 <div>
 	<table rules="all" cellspacing="0" cellpadding="2" border="1" align="center" style="font-family: Verdana; font-size: 6pt; width: 100%; border-collapse: collapse;" id="ctl00_ContentPlaceHolder1_ucledger_gridledger">

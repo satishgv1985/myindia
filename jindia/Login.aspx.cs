@@ -21,6 +21,11 @@ namespace JayahoIndia
                     lblUserLogout.Visible = true;
                     Session.RemoveAll();
                 }
+                else
+                {
+                    lblUserLogout.Text = "Session Expired. Please Login again";
+                    lblUserLogout.Visible = true;
+                }
             }
         }
         //protected void btnLogin_Click(object sender, EventArgs e)
