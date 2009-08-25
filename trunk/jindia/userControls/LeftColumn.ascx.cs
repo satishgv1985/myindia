@@ -64,15 +64,15 @@ public partial class userControls_LeftColumn : System.Web.UI.UserControl
             ud.Pincode = Convert.ToString(drUser["pincode"]);
             ud.EmailId = Convert.ToString(drUser["EmailId"]);
             ud.MobileNo = Convert.ToString(drUser["MobileNo"]);
-
+            //ud.DateCreated = Convert.ToString(drUser["DateCreated"]);
             ud.PanNumber = Convert.ToString(drUser["pannumber"]);
             ud.BankAccountNumber = Convert.ToString(drUser["bankaccountnumber"]);
             ud.BankPayCardNumber = Convert.ToString(drUser["bankpaycardnumber"]);
 
-
+            ud.Password = Convert.ToString(drUser["password"]);
             Session["userdata"] = ud;
-            //FormsAuthentication.RedirectFromLoginPage(ud.Name,false);
-            Response.Redirect("MyProfile.aspx");
+            FormsAuthentication.RedirectFromLoginPage(ud.Name,false);
+            //Response.Redirect("MyProfile.aspx");
         }
 
         //string userId;

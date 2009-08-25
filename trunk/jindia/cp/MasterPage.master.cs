@@ -15,9 +15,9 @@ namespace JayahoIndia
         }
         protected void lbLogout_Click(object sender, EventArgs e)
         {
-            //FormsAuthentication.SignOut();
+            FormsAuthentication.SignOut();
             Session["logout"] = true;
-            Response.Redirect("Login.aspx");
+            Response.Redirect("../Login.aspx");
         }
 }
 }
