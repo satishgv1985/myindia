@@ -1,47 +1,22 @@
 <%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true"
-    CodeFile="MyProfile.aspx.cs" Inherits="JayahoIndia.MyProfile" Title="Untitled Page" %>
+    CodeFile="MyProfile.aspx.cs" Inherits="JayahoIndia.MyProfile" Title="My Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <table width="98%" bgcolor="White" border="0" cellpadding="0" cellspacing="0" height="100%">
         <tr>
-            <td style="font-size: 13px;">
-                <b><u>My Profile</u></b></td>
-        </tr>
-        <%--<tr>
-            <td style="padding-bottom: 6px;">
-                <img src="files/eprofile_banner.jpg" width="772" height="120">
-            </td>
-        </tr>
-         <tr>
             <td>
-                <table width="100%" bgcolor="White" border="0" cellpadding="4" cellspacing="0" height="16">
-                    <tr>
-                        <td style="text-align:left;">
-                            <a href="default.aspx" class="navigator">Home</a> &nbsp;&nbsp;<span style="color: Black;">&#8250;</span>&nbsp;&nbsp;
-                            <a class="navigator" href="myprofile.aspx">My Profile</a> <b><span class="navigator_exist">
-                                &nbsp;&nbsp;<span style="color: Black;">&#8250;</span>&nbsp;&nbsp;&nbsp;Account
-                                Details</span></b>
-                        </td>
-                </table>
+                <span class="innerHeading">My Profile</span><br />
             </td>
         </tr>
-        <tr>
-            <td style="text-align:left;">
-                <h2>
-                    My Profile</h2>
-            </td>
-        </tr>--%>
         <tr>
             <td class="navigator" align="left" bgcolor="#ebebeb" style="margin-top: 5px;">
                 <table width="100%" border="0" cellpadding="4" cellspacing="0">
                     <tr>
                         <td width="10%" style="border-right: 1px solid black;">
-                            <a class="yuimenubaritemlabel hassubmenu" href="editprofile.aspx">Edit Profile</a>
+                            <a href="editprofile.aspx">Edit Profile</a>
                         </td>
                         <td style="padding-left: 10px;">
-                            <a class="yuimenubaritekmlabel hassubmenu" href="changepassword.aspx">Change Password</a>
-                            <%--<li index="2" groupindex="0" id="yui-gen2" class="navigator yuimenubaritem"><a class="yuimenubaritemlabel hassubmenu"
-                                            href="#">Club Account(s)</a></li>--%>
+                            <a href="changepassword.aspx">Change Password</a>
                         </td>
                     </tr>
                 </table>
@@ -62,7 +37,7 @@
                         <td valign="top" width="98%" align="left" height="370">
                             <table class="navigator_normal" width="98%" border="0" cellpadding="1" cellspacing="1">
                                 <tr>
-                                    <td>
+                                    <td class="innerheading2">
                                         Personal Information</td>
                                 </tr>
                                 <tr>
@@ -72,7 +47,7 @@
                                                 <td class="navigator" width="200" height="35">
                                                     <b>Name</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
@@ -83,7 +58,7 @@
                                                 <td class="navigator" width="169" height="35">
                                                     <b>Occupation</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
@@ -94,7 +69,7 @@
                                                 <td class="navigator" valign="top">
                                                     <b>Address </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -105,7 +80,7 @@
                                                 <td class="navigator" valign="top">
                                                     <b>City </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -116,7 +91,7 @@
                                                 <td class="navigator" valign="top">
                                                     <b>State </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -127,7 +102,7 @@
                                                 <td class="navigator" valign="top">
                                                     <b>District </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -138,7 +113,7 @@
                                                 <td class="navigator" valign="top">
                                                     <b>Pin Code </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -149,7 +124,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>E-mail Address </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -162,7 +137,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Mobile No. </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -173,7 +148,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Current Talk Plan </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -187,7 +162,7 @@
                                                 <td class="navigator">
                                                     <b>Pin Activation Date </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -199,7 +174,7 @@
                                                     <b>Date </b>
                                                 </td>
                                                 <!--Label modified by Yamini with pf4200 changes-->
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -213,7 +188,7 @@
                                                     <b>Bill amount </b>
                                                 </td>
                                                 <!--end by hari for CR COCC4764-->
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -224,7 +199,7 @@
                                                 <td class="navigator" height="35">
                                                     <b> Due Date</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -235,7 +210,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Outstanding Amount Due (Rs)</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -246,7 +221,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Credit Limit (Rs) </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -262,7 +237,7 @@
                                                     </p>
                                                     <!--end by hari for CR COCC4764-->
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -274,7 +249,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Deposit Amount (Rs) </b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -286,7 +261,7 @@
                                                 <td height="35">
                                                     <b>&nbsp;&nbsp;Internet Usage Meter</b>
                                                 </td>
-                                                <td width="21" background="files/line.gif">
+                                                <td width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td>
@@ -299,13 +274,12 @@
                                                 <td height="15">
                                                     &nbsp;
                                                 </td>
-                                               
                                             </tr>
                                         </table>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td class="innerheading2">
                                         Bank Information</td>
                                 </tr>
                                 <tr>
@@ -316,7 +290,7 @@
                                                 <td class="navigator" width="200" height="35">
                                                     <b>PAN Number</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
@@ -327,7 +301,7 @@
                                                 <td class="navigator" width="169" height="35">
                                                     <b>Account No.</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal" width="347">
@@ -338,7 +312,7 @@
                                                 <td class="navigator" height="35">
                                                     <b>Pay Card No.</b>
                                                 </td>
-                                                <td class="navigator" width="21" background="files/line.gif">
+                                                <td class="navigator" width="21" background="../files/line.gif">
                                                     &nbsp;
                                                 </td>
                                                 <td class="navigator_normal">
@@ -349,10 +323,8 @@
                                                 <td height="15">
                                                     &nbsp;
                                                 </td>
-                                                
                                             </tr>
                                         </table>
-                                        
                                     </td>
                                 </tr>
                             </table>

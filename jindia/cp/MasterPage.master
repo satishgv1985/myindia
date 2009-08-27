@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>website layout</title>
-    <link href="styles.css" rel="Stylesheet" type="text/css" />
-    
+    <link href="cpStylesheet.css" rel="Stylesheet" type="text/css" />
+     <link href=finalStyles.css rel="Stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -39,13 +39,13 @@
                                 <table width="98%" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td class="navigator" width="25%" align="left">
-                                            Welcome&nbsp;<asp:Label ID="lblName" runat="server" ></asp:Label>
+                                            Welcome&nbsp;<asp:Label ID="lblName" runat="server"></asp:Label>
                                         </td>
                                         <td class="navigator" width="50%" align="center">
                                             Last Login Time:&nbsp;Jun 20, 2009 11:48 Hrs
                                         </td>
                                         <td class="navigator" width="2%" align="right">
-                                            <asp:LinkButton ID="lbLogout" runat="server" Text="Logout" OnClick="lbLogout_Click"></asp:LinkButton>
+                                            <asp:LinkButton ID="lbLogout" runat="server" Text="Logout" OnClick="lbLogout_Click" CausesValidation="false"></asp:LinkButton>
                                         </td>
                                     </tr>
                                 </table>
@@ -55,12 +55,12 @@
                             <td>
                                 <table width="100%" bgcolor="White" height="100%" border="0" cellpadding="1" cellspacing="0">
                                     <tr>
-                                        <td valign="top" style="width:105px;">
+                                        <td valign="top" style="width: 105px;">
                                             <!-- left menu -->
                                             <table class="leftmenu" align="left" width="200" border="0" cellpadding="0" cellspacing="0"
-                                                height="100%" background="files/navi_bg.gif">
+                                                height="100%" background="../files/navi_bg.gif">
                                                 <tr>
-                                                    <td height="7" style="vertical-align: top;" background="files/navi_top.gif">
+                                                    <td height="7" style="vertical-align: top;" background="../files/navi_top.gif">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -68,7 +68,7 @@
                                                         &nbsp;
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                             <%--   <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -82,7 +82,7 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
+                                                </tr>--%>
                                                 <tr>
                                                     <td width="200">
                                                         <table>
@@ -128,7 +128,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                             <%--   <tr>
+                                                <%--   <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -158,7 +158,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                            <%--    <tr>
+                                                <%--    <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -188,7 +188,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                <tr>
+                                                <%--<tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -202,8 +202,8 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
-                                        <%--        <tr>
+                                                </tr>--%>
+                                                <%--        <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -218,7 +218,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>--%>
-                                            <%--    <tr>
+                                                <%--    <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -248,7 +248,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>
-                                             <%--   <tr>
+                                                <%--   <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -263,7 +263,7 @@
                                                         </table>
                                                     </td>
                                                 </tr>--%>
-                                                <tr>
+                                               <%-- <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -277,8 +277,8 @@
                                                             </tr>
                                                         </table>
                                                     </td>
-                                                </tr>
-                                         <%--       <tr>
+                                                </tr>--%>
+                                                <%--       <tr>
                                                     <td width="200">
                                                         <table>
                                                             <tr>
@@ -302,7 +302,7 @@
                                                                     <img src="../ourAssets/blue_arrow.gif" style="" alt="arrow" width="9" height="9">
                                                                 </td>
                                                                 <td>
-                                                                    <a class="buttonbgfont" href="helpdesk.aspx">Help Desk</a>
+                                                                    <a class="buttonbgfont" href="SendMail.aspx">Send Mail</a>
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -320,13 +320,13 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td height="7" style="vertical-align: top;" background="files/navi_bottom.gif">
+                                                    <td height="7" style="vertical-align: top;" background="../files/navi_bottom.gif">
                                                     </td>
                                                 </tr>
                                             </table>
                                             <!-- left menu -->
                                         </td>
-                                        <td valign="top" bgcolor="White" style="padding-left:5px;">
+                                        <td valign="top" bgcolor="White" style="padding:5px 0px 5px 5px;; border:1px solid #4d9edf; ">
                                             <asp:ContentPlaceHolder ID="mainContentPlaceHolder" runat="server">
                                             </asp:ContentPlaceHolder>
                                         </td>
@@ -350,15 +350,16 @@
                                 <div id="footer_home">
                                     <div id="footer-nav">
                                         <div class="navigator_normal">
-                                            <a href="sitemap.aspx">&nbsp;&nbsp; <span class="navigator_normal">
-                                                <font color="White">Site Map</font></span></a><span class="navigator_normal"><font
-                                                    color="White"> | </font></span><a href="tandc.aspx"><span
-                                                        class="navigator_normal"><font color="White">Terms &amp; Conditions</font></span></a></div>
-                                        <br>
+                                            <a href="../Sitemap.aspx">&nbsp;&nbsp; <span class="navigator_normal"><font color="White">
+                                                Site Map</font></span></a><span class="navigator_normal"><font color="White"> | </font>
+                                                </span><a href="../tandc.aspx"><span class="navigator_normal"><font color="White">Terms
+                                                    &amp; Conditions</font></span></a></div>
+                                        <br />
                                         <div class="navigator_normal">
                                             <%--<font color="White">&nbsp;&nbsp; We accept all major credit cards.</font>--%>
                                             <br>
-                                            <font color="White">&nbsp;&nbsp; © 2009 JayahoIndia &amp; All Rights Reserved </font></div>
+                                            <font color="White">&nbsp;&nbsp; © 2009 JayahoIndia &amp; All Rights Reserved </font>
+                                        </div>
                                     </div>
                                 </div>
                             </td>

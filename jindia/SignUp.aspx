@@ -8,9 +8,9 @@
                 <div class="subheading2">
                     Register</div>
                 <div class="text">
-                    With your efforts and our knowledge, the opportunity can become
-                    everything from a means of earning a little extra cash to building an international
-                    business. Please Register with us today
+                    With your efforts and our knowledge, the opportunity can become everything from
+                    a means of earning a little extra cash to building an international business. Please
+                    Register with us today
                 </div>
                 <table width="100%">
                     <tbody>
@@ -25,8 +25,9 @@
                                                         <tr>
                                                             <td colspan="2">
                                                                 <br />
-                                                                <span style="color: rgb(255, 0, 0);">* </span><strong>Mandatory Fields </strong><br />
-                                                                <asp:Label ID="lblUserMessage"  ForeColor="red" runat="server" ></asp:Label>
+                                                                <span style="color: rgb(255, 0, 0);">* </span><strong>Mandatory Fields </strong>
+                                                                <br />
+                                                                <asp:Label ID="lblUserMessage" ForeColor="red" runat="server"></asp:Label>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -87,7 +88,7 @@
                                                                     Personal Details</div>
                                                             </td>
                                                         </tr>
-                                                       <%-- <tr>
+                                                        <%-- <tr>
                                                             <td align="right">
                                                                 Date Of Birth</td>
                                                             <td>
@@ -121,11 +122,13 @@
                                                             <td>
                                                                 <asp:DropDownList ID="ddlState" runat="server">
                                                                     <asp:ListItem Text="Please Select" Value="0"></asp:ListItem>
-                                                                    <asp:ListItem Text="Andhra Pradesh" Value="1"></asp:ListItem>
-                                                                    <asp:ListItem Text="Karnataka" Value="2"></asp:ListItem>
+                                                                    <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh"></asp:ListItem>
+                                                                    <asp:ListItem Text="Karnataka" Value="Karnataka"></asp:ListItem>
+                                                                    <asp:ListItem Text="Kerala" Value="Kerala"></asp:ListItem>
+                                                                    <asp:ListItem Text="Tamil Nadu" Value="Tamil Nadu"></asp:ListItem>
                                                                 </asp:DropDownList>
-                                                                <asp:RequiredFieldValidator ControlToValidate="ddlState" SetFocusOnError="true" ID="rfcState"
-                                                                    Text="Please Select State" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
+                                                                <asp:RequiredFieldValidator InitialValue="0" ControlToValidate="ddlState" SetFocusOnError="true" ID="rfvState"
+                                                                    Text="Please Select a State" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
                                                                 <%--    <select style="width: 208px;" id="ctl00_ContentPlaceHolder1_reg1_ddlstate" name="ctl00$ContentPlaceHolder1$reg1$ddlstate">
                                                                     <option value="0">Select</option>
                                                                     <option value="Andaman &amp; Nicobar Islands">Andaman & Nicobar Islands</option>
@@ -297,7 +300,7 @@
                                                             <td>
                                                             </td>
                                                             <td>
-                                                                <asp:LinkButton ID="lbSubmit" runat="server" Text="Submit" OnClick="lbSubmit_Click"></asp:LinkButton>
+                                                                <asp:LinkButton ID="lbSubmit" runat="server" Text="Submit" CssClass="submitButton" OnClick="lbSubmit_Click"></asp:LinkButton>
                                                             </td>
                                                         </tr>
                                                     </tbody>

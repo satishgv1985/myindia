@@ -28,7 +28,7 @@ namespace JayahoIndia
         private string _dispatchStatus;
         private string _secretQuestion;
         private string _secretAnswer;
-        private DateTime _dateCreated;
+        private string _dateCreated;
 
         public string UserId
         {
@@ -174,7 +174,7 @@ namespace JayahoIndia
             set { _secretAnswer = value; }
         }
 
-        public DateTime DateCreated
+        public string DateCreated
         {
             get { return _dateCreated; }
             set { _dateCreated = value; }
