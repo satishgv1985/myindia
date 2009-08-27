@@ -1,13 +1,13 @@
 <%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true"
-    CodeFile="HelpDesk.aspx.cs" Inherits="HelpDesk" Title="Untitled Page" %>
+    CodeFile="SendMail.aspx.cs" Inherits="HelpDesk" Title="Untitled Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <div class="regborder">
         <table width="100%" cellspacing="2" cellpadding="2" align="center" id="Table1" class="text">
             <tbody>
                 <tr>
-                    <td style="font-size: 13px;">
-                        <b><u>Help Desk</u></b></td>
+                    <td>
+                        <span class="innerHeading">Send Mail</span></td>
                 </tr>
                 <tr>
                     <td align="center" colspan="2">
@@ -16,7 +16,7 @@
                 </tr>
                 <tr align="left">
                     <td colspan="2">
-                        Welcome to the online Helpdesk!
+                        Welcome to the online Help!
                         <br />
                         This Page is intended for Jayaho India Customers, who require technical assistance.
                         <br />
@@ -103,7 +103,7 @@
                             onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$ContentPlaceHolder1$btnsubmit", "", true, "vg", "", false, false))'
                             value="Submit" name="ctl00$ContentPlaceHolder1$btnsubmit" /></td>
                 </tr>
-             <%--   <tr>
+                <%--   <tr>
                     <td class="text" colspan="2">
                         <div>
                             <table rules="all" cellspacing="0" cellpadding="2" border="1" align="center" style="font-family: Verdana;

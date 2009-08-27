@@ -1,0 +1,38 @@
+﻿/* The following are used only in cp folder files*/
+.innerHeading 
+{
+	font-size: 13px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.innerheading2
+{
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:underline;
+	color:#157bcd;	
+}
+.topMessage
+{
+	font-weight:bold;
+	color:Blue;
+}
+
+.tdSubmitButton
+{
+	text-align: center; 
+	height:30px; 
+	padding-top:5px;
+}
+
+/* copied from mainhome.css  and modified some*/
+.tdSubmitButton a
+{
+	border: 1px solid rgb(88, 88, 128); 
+	color: rgb(88, 88, 128);
+	background-color: rgb(248, 247, 244); 
+	font-weight: bold;
+	text-decoration:none;
+	padding:2px;
+	
+}

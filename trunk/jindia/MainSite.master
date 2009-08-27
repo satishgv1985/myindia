@@ -4,7 +4,6 @@
 <head runat="server">
     <title>Untitled Page</title>
     <link href="original/mainhome.css" rel="stylesheet" type="text/css" />
-    <link href="original/effects.css" rel="Stylesheet" type="text/css" />
     <link href="original/ourStyles.css" rel="Stylesheet" type="text/css" />
 </head>
 <body style="background: transparent url('original/background.gif') top repeat-x #a59173;">

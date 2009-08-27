@@ -9,6 +9,9 @@ namespace JayahoIndia
         {
             if(!IsPostBack)
             {
+                if (Session["userdata"] == null)
+                    Response.Redirect("../Login.aspx");
+
                 UserData ud =(UserData) Session["userdata"];
                 lblName.Text = ud.Name;
             }

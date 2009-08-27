@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true"
-    CodeFile="MyBusiness.aspx.cs" Inherits="MyBusiness" Title="Untitled Page" %>
+    CodeFile="MyBusiness.aspx.cs" Inherits="MyBusiness" Title="My Business" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <%--  <table width="98%" bgcolor="White" border="0" cellpadding="0" cellspacing="0" height="100%">
@@ -8,8 +8,9 @@
     <table width="100%">
         <tbody>
             <tr>
-                <td style="font-size: 13px;">
-                    <b><u>My Business</u></b></td>
+                <td>
+                    <span class="innerHeading">My Business</span>
+                    </td>
             </tr>
             <tr>
                 <td>
