@@ -1,8 +1,14 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" Title="Untitled Page" %>
+    CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" Title="Jayaho India - Contact Us" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px; width: 95%">
+        <tr>
+            <td style="text-align: center;">
+                <asp:Label Font-Bold="true" ForeColor="BlueViolet" ID="lblMessage" runat="server"
+                    Visible="false" Text="!Mail Sent Successfully. You will get a reply soon."></asp:Label>
+            </td>
+        </tr>
         <tr>
             <td class="subheading2">
                 Contact Us</td>
@@ -60,51 +66,55 @@
                             <table cellspacing="0" cellpadding="1" align="left" class="text">
                                 <tr>
                                     <td>
-                                        Name:</td>
+                                        Your Name:</td>
                                     <td>
-                                        <input type="text" id="ctl00_ContentPlaceHolder1_contact1_txtname" maxlength="50"
-                                            name="ctl00$ContentPlaceHolder1$contact1$txtname" />
-                                        <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_req1">
-                                            Please Enter Name</span></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Email:</td>
-                                    <td>
-                                        <input type="text" id="ctl00_ContentPlaceHolder1_contact1_txtemail" maxlength="50"
-                                            name="ctl00$ContentPlaceHolder1$contact1$txtemail" />
-                                        <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_RequiredFieldValidator1">
-                                            Please Enter Email ID</span> <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_rev1">
-                                                Invalid Mail Id</span>
+                                        <asp:TextBox ID="tbYourName" runat="server" MaxLength="50"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvYourName" runat="server" ControlToValidate="tbYourName"
+                                            ForeColor="red" ErrorMessage="Please Enter Your Name"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        Phone:</td>
+                                        Your Email:</td>
                                     <td>
-                                        <input type="text" id="ctl00_ContentPlaceHolder1_contact1_txtphone" maxlength="10"
-                                            name="ctl00$ContentPlaceHolder1$contact1$txtphone" />
-                                        <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_RequiredFieldValidator2">
-                                            Enter Phone No</span>
+                                        <asp:TextBox ID="tbYourEmail" runat="server" MaxLength="50"></asp:TextBox>
+                                        <asp:RegularExpressionValidator ID="revYourEmail" runat="server" ControlToValidate="tbYourEmail"
+                                            ErrorMessage="Please Enter Valid Email Id" SetFocusOnError="true" ValidationExpression="^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"></asp:RegularExpressionValidator>
+                                        <asp:RequiredFieldValidator ID="rfvYourEmail" runat="server" ControlToValidate="tbYourEmail"
+                                            ForeColor="red" ErrorMessage="Please Enter Email ID"></asp:RequiredFieldValidator>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Phone No:</td>
+                                    <td>
+                                        <asp:TextBox ID="tbPhoneNo" runat="server" MaxLength="10"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvPhoneNo" runat="server" ControlToValidate="tbPhoneNo"
+                                            ForeColor="red" ErrorMessage="Please Enter Phone No"></asp:RequiredFieldValidator>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Subject:</td>
+                                    <td>
+                                        <asp:TextBox ID="tbSubject" runat="server" MaxLength="60"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvSubject" runat="server" ControlToValidate="tbSubject"
+                                            ForeColor="red" ErrorMessage="Please Enter Subject"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td valign="top">
                                         Message:</td>
                                     <td>
-                                        <asp:TextBox ID="tbMessage" runat="server" TextMode="multiLine" Columns="15" Width="200"
-                                            Height="100"></asp:TextBox>
-                                        <%--
-                                            <span style="color: Red; display: none;" id="ctl00_ContentPlaceHolder1_contact1_RequiredFieldValidator3">
-                                                Please Enter Message</span>--%>
+                                        <asp:TextBox ID="tbMessage" runat="server" TextMode="multiLine" Columns="15" MaxLength="800"
+                                            Width="200" Height="100"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="rfvMessage" runat="server" ControlToValidate="tbMessage"
+                                            ForeColor="red" ErrorMessage="Please Enter Message"></asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" style="text-align: center">
-                                        <br />
-                                        <asp:Button ID="btnSubmitMessage" runat="server" Text="Submit" />
-                                        <br />
-                                        <%-- <span style="color: White;" id="ctl00_ContentPlaceHolder1_contact1_lblmsg" />--%>
+                                    <td class="tdSubmitButton" colspan="2" style="text-align: center">
+                                        <asp:LinkButton ID="btnSubmitMessage" runat="server" Text="Submit" OnClick="btnSubmitMessage_Click"></asp:LinkButton>
                                     </td>
                                 </tr>
                             </table>

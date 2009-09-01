@@ -4,7 +4,8 @@
 <head runat="server">
     <title>website layout</title>
     <link href="cpStylesheet.css" rel="Stylesheet" type="text/css" />
-     <link href=finalStyles.css rel="Stylesheet" type="text/css" />
+     <link href="finalStyles.css" rel="Stylesheet" type="text/css" />
+      <link href="../commonStyles.css" rel="Stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
