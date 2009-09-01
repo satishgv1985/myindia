@@ -26,7 +26,7 @@
                         <td class="navigator" width="21" background="files/line.gif">
                             &nbsp;
                         </td>
-                        <td class="navigator_normal" nowrap="nowrap" style="text-align: left;">
+                        <td class="navigator_snormal" nowrap="nowrap" style="text-align: left;">
                             <asp:TextBox ID="tbExistingPassword" TextMode="Password" Width="150px" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvExistingPassword" runat="server" ControlToValidate="tbExistingPassword"
                                 Text="Enter Existing Password"></asp:RequiredFieldValidator>

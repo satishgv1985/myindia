@@ -18,137 +18,11 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div class="hgbg">
-                                        <div class="style10">
-                                            <u>Personal Infromation</u>
-                                        </div>
-                                    </div>
+                                   
                                     <div class="regborder">
                                         <table width="100%" align="center" class="text">
                                             <tbody>
-                                                <tr>
-                                                    <td style="width: 14px;" colspan="1" class="h2">
-                                                    </td>
-                                                    <td class="h2" colspan="2">
-                                                    </td>
-                                                    <td rowspan="9" style="width: 16px;" colspan="1">
-                                                    </td>
-                                                    <td class="addr" colspan="2">
-                                                        Address Details</td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                        Member Id :
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lbl_mem">zatoichi</span></td>
-                                                    <td style="width: 116px;">
-                                                        Address :
-                                                    </td>
-                                                    <td>
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lbladdress">
-                                                            18-3-53 a/16<br />
-                                                            -</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                        Name :
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblname">k.sravan
-                                                            kumar reddy</span></td>
-                                                    <td style="width: 116px;">
-                                                        City :
-                                                    </td>
-                                                    <td>
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblcity">tirupathi</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                        Sponser Id :
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lbl_sponser">
-                                                            boycompaq123</span></td>
-                                                    <td style="width: 116px;">
-                                                        State :
-                                                    </td>
-                                                    <td>
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblstate">
-                                                            Andhra Pradesh</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                    </td>
-                                                    <td style="width: 116px;">
-                                                        Pin Code :
-                                                    </td>
-                                                    <td>
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblpincode">
-                                                            -</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                    </td>
-                                                    <td style="width: 116px;">
-                                                        Mobile :
-                                                    </td>
-                                                    <td>
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblphone">
-                                                            9985886992</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px; height: 21px;">
-                                                    </td>
-                                                    <td style="height: 21px; width: 119px;">
-                                                    </td>
-                                                    <td style="width: 187px; height: 21px;">
-                                                    </td>
-                                                    <td style="width: 116px; height: 21px;">
-                                                        Join Date :
-                                                    </td>
-                                                    <td style="height: 21px;">
-                                                        <span style="font-weight: normal;" id="ctl00_ContentPlaceHolder1_ucmybuss_lblreceiptdate">
-                                                            1/16/2009</span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                    </td>
-                                                    <td style="width: 116px;">
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="width: 14px;">
-                                                    </td>
-                                                    <td style="width: 119px;">
-                                                    </td>
-                                                    <td style="width: 187px;">
-                                                    </td>
-                                                    <td style="width: 116px;">
-                                                    </td>
-                                                    <td>
-                                                    </td>
-                                                </tr>
+                                           
                                                 <tr>
                                                     <td colspan="6">
                                                         <div class="hgbg">
@@ -225,7 +99,7 @@
                                                     <td style="height: 21px;" colspan="6">
                                                         <div class="hgbg">
                                                             <div class="style10">
-                                                                <u>Amount Summary</u>
+                                                                <b><u>Amount Summary</u></b>
                                                             </div>
                                                         </div>
                                                     </td>

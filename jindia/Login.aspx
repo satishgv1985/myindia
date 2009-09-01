@@ -1,17 +1,18 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Untitled Page" %>
+    CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Jayaho India - Login" %>
 
 <%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <table>
-        <tr>
-            <td colspan="2">
-                <asp:Label Text="User Logged Out Successfully" ID="lblUserLogout" runat="server"
-                    ForeColor="Red"></asp:Label>
-            </td>
-        </tr>
-    </table>
-    <%--  <div style="padding-top: 50px; clear: none; left: 100px; text-align: left; float: right;
+    <div style="margin-left: 250px;">
+        <table>
+            <tr>
+                <td style="padding-left:15px;">
+                    <asp:Label Text="User Logged Out Successfully" ID="lblUserLogout" runat="server"
+                        ForeColor="Red"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        <%--  <div style="padding-top: 50px; clear: none; left: 100px; text-align: left; float: right;
         padding-right: 200px; font-family: Tahoma; font-size: 11px;">
         <div>
             <table>
@@ -60,5 +61,6 @@
             </table>
         </div>
     </div>--%>
-    <uc:LeftColumn ID="leftColumn" runat="server" />
+        <uc:LeftColumn ID="leftColumn" runat="server" />
+    </div>
 </asp:Content>

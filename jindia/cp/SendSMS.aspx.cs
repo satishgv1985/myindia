@@ -15,4 +15,12 @@ public partial class SendSMS : System.Web.UI.Page
     {
 
     }
+    protected void lbSubmit_Click(object sender, EventArgs e)
+    {
+        JayahoIndiaDSTableAdapters.QueriesTableAdapter queryTA = new JayahoIndiaDSTableAdapters.QueriesTableAdapter();
+        Object obj=queryTA.jispUserSMSUpdation(new Guid(Convert.ToString(Session["userid"])), tbMobileNumber.Text, tbTextMessage.Text);
+        lblMessage.Visible = true;
+        tbMobileNumber.Text = "";
+        tbTextMessage.Text = "";
+    }
 }

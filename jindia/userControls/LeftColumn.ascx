@@ -1,7 +1,6 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="LeftColumn.ascx.cs" Inherits="userControls_LeftColumn" %>
 <div id="col_left">
-    <div>
-        <img src="original/customerlogin.gif" /></div>
+    <img src="original/customerlogin.gif" />
     <table cellpadding="3" style="border: 1px solid #d8d8d8; padding: 3px; margin-top: 5px;
         width: 97%;">
         <tr>
@@ -41,12 +40,11 @@
         </tr>
         <tr>
             <td>
-                <asp:LinkButton ID="lbForgotPassword" runat="server" PostBackUrl="~/ForgotPassword.aspx" CssClass="normalText" Text="ForgotPassword"
-                    CausesValidation="false"></asp:LinkButton><br />
-                <asp:LinkButton ID="lbNewUserSignUp" runat="server" PostBackUrl="~/SignUp.aspx" CssClass="normalText" Text="NewUser. Sign Up Now"
-                    CausesValidation="false"></asp:LinkButton>
+                <asp:LinkButton ID="lbForgotPassword" runat="server" PostBackUrl="~/ForgotPassword.aspx"
+                    CssClass="normalText" Text="ForgotPassword" CausesValidation="false"></asp:LinkButton><br />
+                <asp:LinkButton ID="lbNewUserSignUp" runat="server" PostBackUrl="~/SignUp.aspx" CssClass="normalText"
+                    Text="NewUser. Sign Up Now" CausesValidation="false"></asp:LinkButton>
             </td>
         </tr>
     </table>
-   
 </div>

@@ -4,7 +4,7 @@
 <head runat="server">
     <title>Untitled Page</title>
     <link href="original/mainhome.css" rel="stylesheet" type="text/css" />
-    <link href="original/ourStyles.css" rel="Stylesheet" type="text/css" />
+    <link href="commonStyles.css" rel="Stylesheet" type="text/css" />
 </head>
 <body style="background: transparent url('original/background.gif') top repeat-x #a59173;">
     <form id="form1" runat="server">
@@ -94,7 +94,7 @@
                     <a href="/sitemap.htm">Sitemap</a> <a href="/contact.htm">Offices</a></div>
                 <div class="footer_right">
                     © 2009 -
-                    <div class="vcard">
+                    <div>
                         <a class="url fn last" href="http://www.jayahoIndia.com/">JayahoIndia</a>
                         <div class="org">
                             TechUnified</div>
