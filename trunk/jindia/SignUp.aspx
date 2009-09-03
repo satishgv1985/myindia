@@ -227,7 +227,7 @@
                             UserName To Login
                         </td>
                         <td>
-                            <asp:TextBox ID="tbUserNameLogin" runat="server" Width="150px"></asp:TextBox>
+                            <asp:TextBox ID="tbUserNameLogin" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvUserNameLogin" runat="server" ControlToValidate="tbUserNameLogin"
                                 Text="Enter UserName"></asp:RequiredFieldValidator></td>
                     </tr>
@@ -236,7 +236,7 @@
                             Password
                         </td>
                         <td>
-                            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password" Width="150px" meta:resourcekey="txtPasswordResource1"></asp:TextBox>
+                            <asp:TextBox ID="tbPassword" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="tbPassword"
                                 Text="Enter Password"></asp:RequiredFieldValidator></td>
                     </tr>
@@ -245,7 +245,7 @@
                             Retype Password
                         </td>
                         <td>
-                            <asp:TextBox ID="tbReeneterPassword" runat="server" TextMode="Password" Width="150px"></asp:TextBox>
+                            <asp:TextBox ID="tbReeneterPassword" runat="server" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvReEnterPassword" runat="server" ControlToValidate="tbReeneterPassword"
                                 Text="Enter Password" Display="dynamic"></asp:RequiredFieldValidator>
                             <asp:CompareValidator ID="cmpPassword" runat="server" ControlToValidate="tbReeneterPassword"
@@ -257,7 +257,7 @@
                             Forgot Password Secret Question
                         </td>
                         <td>
-                            <asp:TextBox ID="tbSecretQuestion" runat="server" Width="150px"></asp:TextBox>
+                            <asp:TextBox ID="tbSecretQuestion" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvSecretQuestion" runat="server" ControlToValidate="tbSecretQuestion"
                                 Text="Enter Secret Question"></asp:RequiredFieldValidator>
                         </td>
@@ -274,9 +274,9 @@
                     </tr>
                     <tr>
                         <td align="right">
-                            <span style="color: rgb(255, 0, 0);"></span>Nominee Name</td>
+                            Nominee Name</td>
                         <td>
-                            <asp:TextBox ID="tbNominee" runat="server" Width="150px"></asp:TextBox>
+                            <asp:TextBox ID="tbNominee" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvNominee" runat="server" ControlToValidate="tbNominee"
                                 Text="Provide Nominee"></asp:RequiredFieldValidator>
                         </td>
@@ -285,15 +285,13 @@
                         <td align="right">
                             Relation</td>
                         <td>
-                            <asp:TextBox ID="tbNomineeRelation" runat="server" Width="150px"></asp:TextBox>
+                            <asp:TextBox ID="tbNomineeRelation" runat="server"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="rfvNomineeRelation" runat="server" ControlToValidate="tbNomineeRelation"
                                 Text="Provide Nominee"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                        </td>
-                        <td class="tdSubmitButton">
+                        <td class="tdSubmitButton" colspan="2">
                             <asp:LinkButton ID="lbSubmit" runat="server" Text="Submit" OnClick="lbSubmit_Click"></asp:LinkButton>
                         </td>
                     </tr>
