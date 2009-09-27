@@ -21,7 +21,7 @@
                             <table cellspacing="0" cellpadding="0" width="100%">
                                 <tr align="left" valign="top">
                                     <td align="center">
-                                        <img src="original/contactus.jpg" height="150" width="160" /></td>
+                                        <img src="ourAssets/contacts.jpg" height="180" width="180"  /></td>
                                     <td height="40" class="content">
                                         <strong>Regd. Office:</strong><br />
                                         JayahoIndia<br />
@@ -33,7 +33,7 @@
                                         <br />
                                         <b>Cell:</b> +91-94801 83475
                                         <br />
-                                        <b>Skype:</b> researchreporter
+                                        <b>Skype:</b> jayahoindia
                                         <br />
                                     </td>
                                     <%-- <td width="317">

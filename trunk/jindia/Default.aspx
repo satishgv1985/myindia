@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Default.aspx.cs" Inherits="_Default" Title="Untitled Page" %>
+    CodeFile="Default.aspx.cs" Inherits="_Default" Title="Jayaho India - Home" %>
 <%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
  <%--   <table cellpadding="0" cellspacing="0" border="0">
@@ -98,25 +98,25 @@
                         <br>
                         <br>
                         <br>--%>
-                        <img src="original/companyinfo_new.gif" alt="" usemap="#Map" border="0">
+                        <img src="ourAssets/mainpage.bmp" alt="" usemap="#Map" border="0">
                         <map name="Map">
-                            <area shape="rect" coords="274,7,352,23" href="images/nlq4.jpg">
-                            <area shape="rect" coords="364,7,422,23" href="about/contact.htm">
-                            <area shape="rect" coords="436,8,508,23" href="about/index.htm">
+                            <area shape="rect" coords="274,7,352,23" href="BusinessPlan.aspx">
+                            <area shape="rect" coords="364,7,422,23" href="contactUs.aspx">
+                            <area shape="rect" coords="436,8,508,23" href="AboutUs.aspx">
                         </map>
                         <div class="features" style="background: transparent url('original/features_back.gif') 0 26px repeat-x;"
                             id="newsFeed">
                             <h3 style="background-image: url('original/h3_back.gif');">
                                 News</h3>
                             <p class="style9" align="left">
-                                <span class="style14">10 June 2009:</span> JayahoInida has become a part of so and
+                                <span class="style14">10 September 2009:</span> JayahoInida has become a part of so and
                                 so Group and now an <strong>so and so Company</strong></p>
                             <p align="left">
-                                <span class="style10"><span class="style14">20 June 2009:</span> We've extended our
+                                <span class="style10"><span class="style14">20 September 2009:</span> We've extended our
                                     softwares line; Our products are <strong>Mobile Add</strong>, <strong>sample text </strong>
                                     &amp; <strong>text</strong></span></p>
                             <p align="left">
-                                <span class="style8"><span class="style14">11 June 2009:</span> JayahoIndia sucessfully
+                                <span class="style8"><span class="style14">11 September 2009:</span> JayahoIndia sucessfully
                                     started the development of the marketing and other things.</span><br>
                                 <a href="/news/index.htm">Continue to Full Articles »</a></p>
                         </div>
@@ -130,16 +130,16 @@
                                         <br>
                                         JayahoIndia SMS product
                                         <br>
-                                        I use a lot of SMS
+                                        I am glad I became a
                                         <br>
-                                        they are good,
+                                        member now. I sent SMS,
                                         <br>
-                                        efficient and professional..."</span></p>
+                                        Its efficient and professional..."</span></p>
                                 <p class="style3">
-                                    <strong>Name of sample<br>
-                                        CEO, some company</strong></p>
-                                <p class="style3">
-                                    <a href="customers.htm">More Testimonials »</a></p>
+                                    <strong>Name<br>
+                                        (Member)</strong></p>
+                                <%--<p class="style3">
+                                    <a href="customers.htm">More Testimonials »</a></p>--%>
                             </div>
                         </div>
                     </div>

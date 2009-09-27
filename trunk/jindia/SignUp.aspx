@@ -8,9 +8,9 @@
                 <div class="subheading2">
                     Register</div>
                 <div class="text">
-                    With your efforts and our knowledge, the opportunity can become everything from
-                    a means of earning a little extra cash to building an international business. Please
-                    Register with us today
+                To join Jayaho India business plans,you are required to purhase product in Rs. 1,000.
+                Binary by and you will be authorised to promote our business package and be entitled for smart earning and incentive.
+                Please Register here after you purchase the Pin.
                 </div>
                 <table cellspacing="0" cellpadding="2" border="0" align="center" width="100%">
                     <tr>
