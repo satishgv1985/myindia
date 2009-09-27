@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="BusinessPlan.aspx.cs" Inherits="BusinessPlan" Title="Untitled Page" %>
+    CodeFile="BusinessPlan.aspx.cs" Inherits="BusinessPlan" Title="Jayho India - Business Plan" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table class="text" style="margin-left: 15px;" width="96%">
@@ -10,20 +10,16 @@
         <tr>
             <td height="97">
                 <div class="h2">
-                    Pair Income</div>
+                    Pair Income - Binary Plan</div>
                 <div>
-                    This plan is much safer and simple than traditional binary plans. When you became
-                    our member you must bring down lines to your left leg and right leg (optional).
-                    From each level only first pair will be considered for pair income. No tail is required
-                    for payout. SMS offers you a convenient & economical way to stay in touch with friends
-                    and families! This is a virtual product that does not require any warehousing, shipping
-                    or handling costs and gets delivered directly to the member.
+                    Binary Plan is based on work you do in the board plan. All members will have to make two child members, one in left and another in right in the first level and one more members through downline to complete first pair in all cases. Pair would be the first 2:1 or 1:2 ratio in the first level and there after 1:1 up to unlimited depth.
+                     From each level only first pair will be considered for pair income .
                     <br />
                     <br />
                     <div align="center">
-                        <img src="original/plan1.png" /></div>
+                        <img src="ourAssets/income_image.gif" /></div>
                     <div class="h2">
-                        Attractions
+                        Positives   
                     </div>
                     <ul>
                         <li>Simple binary plan with 1:1 pair</li>
@@ -38,7 +34,7 @@
                         <li>Cut-off time 00:00 Hrs every day </li>
                         <li>Daily payout: @00:00 Hrs </li>
                         <li>Deductions: service Charge 5%, TDS 10.33% </li>
-                        <li>(Note: Rs.350/- will be deducted from the first pair income towards ICICI Pay Direct
+                        <li>(Note: Rs.350/- will be deducted from the first pair income towards Pay Direct
                             Card)</li>
                     </ul>
                     <strong>
@@ -52,42 +48,42 @@
                     you refer, and on the SMSs sending by you and your down line up to 5 deep levels.
                     <br />
                     <div class="border">
-                        <table cellspacing="2" cellpadding="2" border="0" width="100%">
+                        <table cellspacing="2" cellpadding="2" border="1" width="100%" bordercolor="black" style="border-collapse:collapse;">
                             <tbody>
                                 <tr>
-                                    <td bgcolor="#009900" class="h2" colspan="3">
+                                    <td colspan="3">
                                         <strong>Sender Commission Chart:</strong>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Sender
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             To Registered Member
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             To Non-Registered Member</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Amount on each SMS</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Amount on each SMS
                                             <!--mstheme-->
@@ -95,17 +91,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 0</div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             10 paise
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             5 paisa
                                             <!--mstheme-->
@@ -113,17 +109,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 1</div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             2 paisa
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                             <!--mstheme-->
@@ -131,52 +127,52 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 2
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 3
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 4
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                             <!--mstheme-->
@@ -184,19 +180,19 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 5
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa
                                             <!--mstheme-->
@@ -204,102 +200,102 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#009900" class="h2" colspan="3">
+                                    <td bgcolor="white" class="h2" colspan="3">
                                         <strong><strong>Receiver Commission Chart: (only for registered members)</strong></strong></td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Amount on each SMS</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 0</div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             5 paise</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 1
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 2
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 3
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 4
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             Level 5
                                             <!--mstheme-->
                                         </div>
                                     </td>
-                                    <td bgcolor="#c1e4a7">
+                                    <td bgcolor="white">
                                         <div align="center">
                                             1 paisa</div>
                                     </td>
-                                    <td bgcolor="#e8f5de">
+                                    <td bgcolor="white">
                                         <div align="center" />
                                     </td>
                                 </tr>

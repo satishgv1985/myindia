@@ -5,17 +5,17 @@
     <title>Untitled Page</title>
     <link href="original/mainhome.css" rel="stylesheet" type="text/css" />
     <link href="commonStyles.css" rel="Stylesheet" type="text/css" />
+    <meta name="description" content="JayahoIndia is a new company managed by highly professional individuals who already have a nice experience in the field of MLM and Corporate training." />
 </head>
 <body style="background: transparent url('original/background.gif') top repeat-x #a59173;">
     <form id="form1" runat="server">
         <div id="master_container">
-            <div id="header" style="background: transparent url('original/header_logo_new_l.jpg') 0 33px no-repeat;">
-                <center>
-                </center>
+            <div id="header" style="background: transparent url('ourAssets/header_logo_new_final.JPG') 0 33px no-repeat;">
+               
                 <h1>
                     <a href="default.aspx">JayahoIndia</a></h1>
-                <h2 style="background-image: url('original/header_grow_new.jpg'); background-repeat: no-repeat;">
-                    Wireless &amp; Voice Serices &amp; Products</h2>
+                <h2 style="background-image: url('original/header_grow_new.jpg'); margin-top:5px; margin-right:5px;  background-repeat: no-repeat;">
+                    </h2>
                 <ul id="nav">
                     <li class="nav1" style="background-image: url('original/nav1.gif');"><a href="default.aspx">
                         Home</a></li>
@@ -29,10 +29,8 @@
                         Registration</a></li>
                     <li class="nav5" style="background-image: url('original/nav5.gif');"><a href="Advertise.aspx">
                         Advertise</a></li>
-                    <li class="nav6" style="background-image: url('original/nav6.gif');"><a href="contactus.aspx">
+                    <li class="nav6" style="background-image: url('original/nav6.png');"><a href="contactus.aspx">
                         Contact Us</a></li>
-
-                   
                 </ul>
             </div>
             <div id="content" style="background-image: url('original/content_back.gif'); padding-top: 5px;">
@@ -90,11 +88,11 @@
             </div>
             <div id="footer" style="background: transparent url('original/footer_back.gif') left top no-repeat;">
                 <div class="footer_left">
-                    <a href="http://www.companyname.com/">CompanyName</a> <a href="/jobs.html">Careers</a>
-                    <a href="/sitemap.htm">Sitemap</a> <a href="/contact.htm">Offices</a></div>
+                    <a href="http://www.companyname.com/">CompanyName</a> <a href="jobs.aspx">Careers</a>
+                    <a href="sitemap.aspx">Sitemap</a> <a href="contactus.aspx">Offices</a></div>
                 <div class="footer_right">
                     © 2009 -
-                    <div>
+                    <div class="vcard">
                         <a class="url fn last" href="http://www.jayahoIndia.com/">JayahoIndia</a>
                         <div class="org">
                             JayahoIndia</div>

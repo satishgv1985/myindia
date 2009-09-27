@@ -18,7 +18,7 @@
         <tr>
             <td>
                 Login Name:<br />
-                <asp:TextBox ID="tbLoginName" runat="server" Text="admin" Width="150px"></asp:TextBox>
+                <asp:TextBox ID="tbLoginName" runat="server" Width="150px"></asp:TextBox>
                 <asp:RequiredFieldValidator ControlToValidate="tbLoginName" SetFocusOnError="true"
                     ID="rfvLoginName" Text="* Required" runat="server" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>

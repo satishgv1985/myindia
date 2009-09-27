@@ -4,20 +4,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px;" width="96%">
         <tr>
-            <td valign="top" >
+            <td valign="top">
                 <div class="subheading2">
                     Advertise</div>
                 <table cellspacing="0" cellpadding="0" border="0" width="100%" class="text">
                     <tbody>
                         <tr>
                             <td>
-                                <img hspace="5" height="83" align="right" width="129" src="images/advertisepng.png" />Ads
-                                on mobile.biz helps you advertise your products or services by sending text messages
-                                to our subscribed members. Ads on mobile offers very low cost and effective mobile
-                                marketing. The best part of mAds on mobile advertising is that the SMS will be sent
-                                to the TARGETED audience only.<br />
+                                Jayaho India helps you advertise your products or services by sending text messages
+                                to our subscribed members. This is one of the easiest way of mobile marketing. The
+                                best part of mAds on mobile advertising is that the SMS will be sent to the TARGETED
+                                audience only.<br />
+                                <br />
+                                <strong>Here's how it works </strong>
                                 <ul>
-                                    <li>Here's how it works </li>
                                     <li>Buy SMS Credits. </li>
                                     <li>Create an SMS Campaign by selecting SMS Category. </li>
                                     <li>You decide optional criteria like Age, Gender or Location of receiver.</li><li>Customize

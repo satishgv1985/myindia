@@ -9,15 +9,16 @@
         </tr>
         <tr>
             <td style="vertical-align:text-top;">
-                First of all congratulations and warm welcome to the Ads on mobile.biz Family. This
-                website allows you to send text messages to any mobile phone network in India for
-                free. SMS text messaging is both fun and fast growing, so keep in touch with your
-                friends and family quickly and easily using this service.
+                Jayho India is a Indian based SMS Marketing company established in 2009.
+                With growing mobile usage by the people daily, it has become common a mobile in every persons hand.
+                SMS(Small Message Service) sent lives long than a phone call. Now-a-days sending SMS is quite common 
+                and has become cheap. It helps to keep in touch with friends and family.
                 <br />
                 <br />
-                No more pay your mobile phone bills and allows your mobile phone to pay it. Melissa
-                launches mobile income plan which not only makes your mobile phone capable of making
-                money enough to pay its own bills but you can also get huge Income from Mobile.<br />
+                Paying mobile bills is hard at the month end. Dont worry use our new income plan and earn money to pay your bills
+                using your own mobile phone by simply receiving SMS. 
+                SMS Marketing is a new wave in Indian Market where people earn money by receiving SMS.
+                We are happy to introduce you to that.<br />
             </td>
             <td>
                 <img src="original/man_world_180_144.jpg" height="300" /></td>

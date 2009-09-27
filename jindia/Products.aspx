@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Products.aspx.cs" Inherits="Products" Title="Jayaho India - Products - Net to Mobile Messaging solution" %>
+    CodeFile="Products.aspx.cs" Inherits="Products" Title="Jayaho India - Products - Computer to Mobile Messaging solution" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table cellspacing="0" cellpadding="0" class="text" style="margin-left: 15px;" width="96%">
@@ -11,11 +11,22 @@
             <tr>
                 <td>
                     <div style="margin-top: 10px; margin-bottom: 10px;">
-                        Our unique product is the Web to Mobile Text Messaging (SMS) package.</div>
-                    <div style="margin-top: 10px; margin-bottom: 20px;">
+                        The product is Computer to Mobile Messaging (SMS) product.</div>
+                    <br />
+                    <br />
+                    <div class="h2">
+                        <strong>Details:</strong></div>
+                    Name: Computer to Mobile Messaging (SMS)
+                    <br />
+                    No. of SMS Can Send: 100 per day
+                    <br />
+                    Validity: 1Year from the Date of Registration
+                    <br />
+                    Cost: INR 1000/- (excluding service tax)
+                    <%-- <div style="margin-top: 10px; margin-bottom: 20px;">
                         <table height="107" cellspacing="0" cellpadding="5" bordercolor="#009900" border="1"
                             align="left" width="90%">
-                            <tbody>
+                            
                                 <tr>
                                     <td align="left" width="168" valign="middle" scope="row">
                                         <img height="43" align="right" width="64" src="images/mobile.jpg" />Web to Mobile
@@ -27,30 +38,25 @@
                                     <td align="left" width="212" valign="middle">
                                         Price: Rs. 1050/-</td>
                                 </tr>
-                            </tbody>
+                           
                         </table>
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                    </div>--%>
+                   
                     <br />
                     <br />
                     <div class="h2">
                         <strong>Features:</strong></div>
                     <br />
                     <div style="margin-top: 10px; margin-bottom: 10px;">
-                        SMS offers you a convenient & economical way to stay in touch with friends and families!
-                        This is a virtual product that does not require any warehousing, shipping or handling
-                        costs and gets delivered directly to the member.
+                        SMS offers you a convenient & economical way to stay in touch with all.
+                        <br />Login to send SMS to any mobile in India. 
+                        <br />Receive money for sending SMS to members as well as non-members.
                     </div>
                     <div class="h2">
                         <strong>How It Works?</strong></div>
                     <div style="margin-top: 10px; margin-bottom: 10px;">
                         Send SMS (Text message) to any mobile in India.<br />
                         Send Single or group SMS<br />
-                        Convenient Phone book feature to store mobile numbers
                         <br />
                         Web SMS for anywhere convenience<br />
                         Daily SMS limit: 100
