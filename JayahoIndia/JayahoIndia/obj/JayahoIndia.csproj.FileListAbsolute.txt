@@ -65,3 +65,6 @@ C:\Documents and Settings\Admin\Desktop\JayahoIndia\JayahoIndia\JayahoIndia\obj\
 C:\Documents and Settings\Admin\Desktop\JayahoIndia\JayahoIndia\JayahoIndia\obj\Debug\JayahoIndia.csproj.GenerateResource.Cache
 C:\Documents and Settings\Admin\Desktop\JayahoIndia\JayahoIndia\JayahoIndia\obj\Debug\JayahoIndia.PendingPaymentsToUsers.resources
 C:\Documents and Settings\Admin\Desktop\JayahoIndia\JayahoIndia\JayahoIndia\obj\Debug\JayahoIndia.UpdateUserPayments.resources
+C:\Documents and Settings\Admin\Desktop\MyProject\JayahoIndia\JayahoIndia\bin\Debug\JayahoIndia.exe.config
+C:\Documents and Settings\Admin\Desktop\MyProject\JayahoIndia\JayahoIndia\obj\Debug\JayahoIndia.exe
+C:\Documents and Settings\Admin\Desktop\MyProject\JayahoIndia\JayahoIndia\obj\Debug\JayahoIndia.pdb
