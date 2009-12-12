@@ -26,7 +26,7 @@ namespace JayahoIndia
 
             JayahoIndiaDataSet.InsertUserDataTable objiu = objInsertUser.GetData(new Guid(textBoxUserPin.Text), textBoxusername.Text, textBoxParentUsername.Text, comboBoxJoinAt.SelectedItem.ToString(), "password", textBoxusername.Text, "Bangalore", "AP", "", "Atp", "560078", "9986430161", "dmnreddy@gmail.com", "test relation", "brother", "pet name", "dog");
                   
-          MessageBox.Show(Convert.ToString(objiu.Rows[0][0]));
+            MessageBox.Show(Convert.ToString(objiu.Rows[0][0]));
         }
 
         private void panel1_Click(object sender, EventArgs e)

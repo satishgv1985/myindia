@@ -90,5 +90,18 @@ namespace JayahoIndia
             UpdateUserPayments objUpdateUserPayments = new UpdateUserPayments();
             objUpdateUserPayments.ShowDialog();
         }
+
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            InstallJayaho objInstall = new InstallJayaho();
+            objInstall.ShowDialog();
+        }
+
+        private void pendingpaymentstousers_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+       
     }
 }

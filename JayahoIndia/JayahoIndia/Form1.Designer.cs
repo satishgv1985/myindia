@@ -35,6 +35,7 @@ namespace JayahoIndia
             this.panel1 = new BSE.Windows.Forms.Panel();
             this.xPanderPanelList1 = new BSE.Windows.Forms.XPanderPanelList();
             this.xPanderPanelAdmin = new BSE.Windows.Forms.XPanderPanel();
+            this.linkLabel4 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabelViewActivationDetails = new System.Windows.Forms.LinkLabel();
             this.linkLabelGeneratePins = new System.Windows.Forms.LinkLabel();
@@ -139,6 +140,7 @@ namespace JayahoIndia
             this.xPanderPanelAdmin.ColorCaptionGradientBegin = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(177)))), ((int)(((byte)(250)))));
             this.xPanderPanelAdmin.ColorCaptionGradientEnd = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(53)))), ((int)(((byte)(145)))));
             this.xPanderPanelAdmin.ColorCaptionGradientMiddle = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(127)))), ((int)(((byte)(208)))));
+            this.xPanderPanelAdmin.Controls.Add(this.linkLabel4);
             this.xPanderPanelAdmin.Controls.Add(this.linkLabel3);
             this.xPanderPanelAdmin.Controls.Add(this.linkLabelViewActivationDetails);
             this.xPanderPanelAdmin.Controls.Add(this.linkLabelGeneratePins);
@@ -150,6 +152,22 @@ namespace JayahoIndia
             this.xPanderPanelAdmin.PanelStyle = BSE.Windows.Forms.PanelStyle.Default;
             this.xPanderPanelAdmin.TabIndex = 0;
             this.xPanderPanelAdmin.Text = "Admin";
+            // 
+            // linkLabel4
+            // 
+            this.linkLabel4.AccessibleDescription = "x";
+            this.linkLabel4.ActiveLinkColor = System.Drawing.Color.Black;
+            this.linkLabel4.AutoSize = true;
+            this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.ForeColor = System.Drawing.Color.White;
+            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
+            this.linkLabel4.Location = new System.Drawing.Point(5, 156);
+            this.linkLabel4.Name = "linkLabel4";
+            this.linkLabel4.Size = new System.Drawing.Size(90, 15);
+            this.linkLabel4.TabIndex = 10;
+            this.linkLabel4.TabStop = true;
+            this.linkLabel4.Text = "Install Admin";
+            this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
             // linkLabel3
             // 
@@ -266,6 +284,7 @@ namespace JayahoIndia
             this.pendingpaymentstousers.TabIndex = 12;
             this.pendingpaymentstousers.TabStop = true;
             this.pendingpaymentstousers.Text = "Pending Payments To Users";
+            this.pendingpaymentstousers.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.pendingpaymentstousers_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -375,6 +394,7 @@ namespace JayahoIndia
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel updateuserpayments;
         private System.Windows.Forms.LinkLabel pendingpaymentstousers;
+        private System.Windows.Forms.LinkLabel linkLabel4;
     }
 }
 

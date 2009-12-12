@@ -31,8 +31,6 @@ namespace JayahoIndia
             this.panel1 = new BSE.Windows.Forms.Panel();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbIntoducerName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBoxPan = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.textBoxPin = new System.Windows.Forms.TextBox();
@@ -133,8 +131,6 @@ namespace JayahoIndia
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tbIntoducerName);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxPan);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.textBoxPin);
@@ -151,22 +147,6 @@ namespace JayahoIndia
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Details";
-            // 
-            // tbIntoducerName
-            // 
-            this.tbIntoducerName.Location = new System.Drawing.Point(147, 219);
-            this.tbIntoducerName.Name = "tbIntoducerName";
-            this.tbIntoducerName.Size = new System.Drawing.Size(205, 20);
-            this.tbIntoducerName.TabIndex = 21;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 226);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 13);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Introducer User Name";
             // 
             // textBoxPan
             // 
@@ -667,8 +647,6 @@ namespace JayahoIndia
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox tbIntoducerName;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButtonContainsCourier;
         private System.Windows.Forms.RadioButton radioButtonBeginsCourier;
         private System.Windows.Forms.TextBox textBoxUserNameCourierSearch;
