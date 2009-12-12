@@ -29,7 +29,7 @@ namespace JayahoIndia
                 JayahoIndiaDataSetTableAdapters.UserDetailsTableAdapter objuserdetails = new JayahoIndia.JayahoIndiaDataSetTableAdapters.UserDetailsTableAdapter();
                 JayahoIndiaDataSet.UserDetailsDataTable userdetails = objuserdetails.GetData(listBoxUsers.Text);
                 textBoxName.Text = userdetails[0].UserName.ToString();
-                textBoxAddress.Text = userdetails[0].Address.ToString();                
+                textBoxAddress.Text = userdetails[0].Address.ToString();
                 textBoxState.Text = userdetails[0].State.ToString();
                 textBoxPin.Text = userdetails[0].Pincode.ToString();
                 textBoxPan.Text = userdetails[0].PANNumber.ToString();
@@ -86,12 +86,50 @@ namespace JayahoIndia
 
         private void buttonUpdate_Click(object sender, EventArgs e)
         {
-            string username = listBoxUsers.Text;
-            JayahoIndiaDataSetTableAdapters.UpdateUserDetailsTableAdapter objupdatenew = new JayahoIndia.JayahoIndiaDataSetTableAdapters.UpdateUserDetailsTableAdapter();
-            JayahoIndiaDataSet.UpdateUserDetailsDataTable userupadte = objupdatenew.GetData(username, textBoxName.Text,
-             textBoxAddress.Text, textBoxPlace.Text, textBoxState.Text, textBoxPin.Text, textBoxPan.Text, textBoxPaycard.Text,
-             textBoxAccount.Text, textBoxCourierName.Text, textBoxCourierNumber.Text, dispatchdate.Value, dispatchStatus.Text);
-            groupBox8.Enabled = false;
+            try
+            {
+                string username = listBoxUsers.Text;
+                JayahoIndiaDataSetTableAdapters.UpdateUserDetailsTableAdapter objupdatenew = new JayahoIndia.JayahoIndiaDataSetTableAdapters.UpdateUserDetailsTableAdapter();
+                int result  = objupdatenew.Update(listBoxUsers.Text,
+                    textBoxName.Text,
+                    textBoxAddress.Text,
+                    textBoxState.Text,
+                    textBoxPin.Text,
+                    textBoxPaycard.Text,
+                 textBoxPaycard.Text,
+                 textBoxAccount.Text,
+                 textBoxCourierName.Text,
+                 textBoxCourierNumber.Text,
+                 dispatchdate.Value,
+                 getDispatchStatus());
+                
+                MessageBox.Show("Updation Successful");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Updation Failed" + ex.Message);
+            }
+        }
+
+        private string getDispatchStatus()
+        {
+            switch (comboBoxCourierDetails.SelectedItem.ToString())
+            {
+
+                case "Pending":
+                    return "0";
+                    break;
+                case "Delivered From Office But Pending":
+                    return "1";
+                    break;
+                case "Completed":
+                    return "2";
+                    break;
+
+                default:
+                    break;
+            }
+            return "";
         }
 
         private void buttonbuttonBankDetails_Click(object sender, EventArgs e)
