@@ -20,7 +20,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\jindia\", "jindia", 
 		VWDPort = "2230"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JayahoIndia", "JayahoIndiaAdmin\JayahoIndia.csproj", "{EF9437F8-82BA-420B-8DAB-EDCA09771AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JayahoIndia", "..\myindia\JayahoIndiaAdmin\JayahoIndia.csproj", "{EF9437F8-82BA-420B-8DAB-EDCA09771AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
