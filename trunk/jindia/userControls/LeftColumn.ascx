@@ -1,7 +1,7 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeFile="LeftColumn.ascx.cs" Inherits="userControls_LeftColumn" %>
 <div id="col_left">
     <img src="original/customerlogin.gif" />
-    <table cellpadding="3" style="border: 1px solid #d8d8d8; padding: 3px; margin-top: 5px;
+    <table cellpadding="2" style="border: 1px solid #d8d8d8; padding: 3px; margin-top: 5px;
         width: 97%;">
         <tr>
             <td>

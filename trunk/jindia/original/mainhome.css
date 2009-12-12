@@ -8,6 +8,9 @@ body, html
 	height: 100%;
 	width: 100%;
 	text-align: center;
+	background: white url(  "files/background.gif" ) top repeat-x #a59173;
+	font-size: 80%;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
 
 
@@ -211,7 +214,7 @@ ul#proposalList
 	margin: -5px 0 0 3px;
 	padding: 10px 10px 15px 10px;
 	width: 159px;
-	background: url(     "original/quotelist_bottom.gif" ) left bottom no-repeat #e9e5d7;
+	background: url(      "original/quotelist_bottom.gif" ) left bottom no-repeat #e9e5d7;
 }
 
 ul#proposalList li
@@ -240,7 +243,7 @@ ol#bmgTabs
 	position: relative;
 	margin: 0;
 	padding: 0;
-	background: url(     "original/tab_back.gif" ) no-repeat;
+	background: url(      "original/tab_back.gif" ) no-repeat;
 	height: 38px;
 	width: 100%;
 	z-index: 200;
@@ -276,12 +279,12 @@ h2#getStarted
 	height: 0;
 	padding-top: 38px;
 	overflow: hidden;
-	background-image: url(     "original/tab_getstarted.gif" );
+	background-image: url(      "original/tab_getstarted.gif" );
 }
 
 a#dtBuild, a#dtBuild:link, a#dtBuild:visited
 {
-	background-image: url(     "original/tab_dtbuild.gif" );
+	background-image: url(      "original/tab_dtbuild.gif" );
 	background-position: 0 0;
 }
 
@@ -292,7 +295,7 @@ a#dtBuild:hover
 
 a#dtMarket, a#dtMarket:link, a#dtMarket:visited
 {
-	background-image: url(     "original/tab_dtmarket.gif" );
+	background-image: url(      "original/tab_dtmarket.gif" );
 	background-position: 0 0;
 }
 
@@ -303,7 +306,7 @@ a#dtMarket:hover
 
 a#dtGrow, a#dtGrow:link, a#dtGrow:visited
 {
-	background-image: url(     "original/tab_dtgrow.gif" );
+	background-image: url(      "original/tab_dtgrow.gif" );
 	background-position: 0 0;
 }
 
@@ -321,7 +324,7 @@ div.popUp
 	width: 168px;
 	height: 80px;
 	padding: 0 0 30px 0;
-	background-image: url(     "original/bmg_back.gif" );
+	background-image: url(      "original/bmg_back.gif" );
 }
 
 div.popUp a.closeLink, div.popUp a.closeLink:link, div.popUp a.closeLink:visited
@@ -346,7 +349,7 @@ div.popUp p
 	position: relative;
 	padding: 10px 15px 0 15px;
 	margin: 0;
-	background-image: url(     "original/bmg_back.gif" );
+	background-image: url(      "original/bmg_back.gif" );
 }
 
 #infoBuild
@@ -385,16 +388,6 @@ div.popUp p
 
 
 
-#body
-{
-	position: relative;
-	width: 100%;
-	padding: 10px 0 10px 0;
-	z-index: 100;
-	clear: both;
-	background: url(     "original/content_top.gif" ) left top no-repeat;
-	overflow: hidden;
-}
 
 
 
@@ -428,27 +421,27 @@ h3.display a:hover
 
 h3#buildNav a, h3#buildNav a:link, h3#buildNav a:visited
 {
-	background-image: url(     "original/nav_build.gif" );
+	background-image: url(      "original/nav_build.gif" );
 }
 
 h3#marketNav a, h3#marketNav a:link, h3#marketNav a:visited
 {
-	background-image: url(     "original/nav_market.gif" );
+	background-image: url(      "original/nav_market.gif" );
 }
 
 h3#growNav a, h3#growNav a:link, h3#growNav a:visited
 {
-	background-image: url(     "original/nav_grow.gif" );
+	background-image: url(      "original/nav_grow.gif" );
 }
 
 h3#growNav2 a, h3#growNav2 a:link, h3#growNav2 a:visited
 {
-	background-image: url(     "original/abouttab.gif" );
+	background-image: url(      "original/abouttab.gif" );
 }
 
 h3#growNav3 a, h3#growNav3 a:link, h3#growNav3 a:visited
 {
-	background-image: url(     "original/servtab.gif" );
+	background-image: url(      "original/servtab.gif" );
 }
 
 .stretcher
@@ -496,7 +489,7 @@ h3#growNav3 a, h3#growNav3 a:link, h3#growNav3 a:visited
 	margin: 0 0 0 -15px;
 	padding: 0;
 	height: 10px;
-	background: url(     "original/left_bottom.gif" ) no-repeat top #ffffff;
+	background: url(      "original/left_bottom.gif" ) no-repeat top #ffffff;
 }
 
 
@@ -511,7 +504,7 @@ a#callToAction, a#callToAction:link, a#callToAction:visited
 	height: 0;
 	padding: 42px 0 0 0;
 	overflow: hidden;
-	background-image: url(     "original/btn_requestproposal2.gif" );
+	background-image: url(      "original/btn_requestproposal2.gif" );
 	background-position: 0 0;
 }
 
@@ -547,7 +540,7 @@ a#callToAction:hover
 	height: 0;
 	overflow: hidden;
 	padding: 55px 0 0 0;
-	background-image: url(     "original/title_wegrow.gif" );
+	background-image: url(      "original/title_wegrow.gif" );
 	background-position: 0 0;
 }
 
@@ -631,7 +624,7 @@ a#callToAction:hover
 	position: relative;
 	margin: 0;
 	padding: 0;
-	list-style-image: url(     "original/bullet_arrow.gif" );
+	list-style-image: url(      "original/bullet_arrow.gif" );
 }
 
 
@@ -680,17 +673,17 @@ a#callToAction:hover
 
 #bmgBuild
 {
-	background-image: url(    'original/bmg_build.gif' );
+	background-image: url(     'original/bmg_build.gif' );
 }
 
 #bmgMarket
 {
-	background-image: url(    'original/bmg_market.gif' );
+	background-image: url(     'original/bmg_market.gif' );
 }
 
 #bmgGrow
 {
-	background-image: url(    'original/bmg_grow.gif' );
+	background-image: url(     'original/bmg_grow.gif' );
 }
 
 
@@ -724,7 +717,7 @@ a#callToAction:hover
 	line-height: 40px;
 	font-size: 1em;
 	text-align: center;
-	background: url(     "original/right_title.gif" ) no-repeat;
+	background: url(      "original/right_title.gif" ) no-repeat;
 }
 
 
@@ -743,7 +736,7 @@ a#callToAction:hover
 	padding: 0 0 0 0;
 	line-height: 25px;
 	list-style-type: none;
-	background: url(     "original/dots.gif" ) left bottom repeat-x;
+	background: url(      "original/dots.gif" ) left bottom repeat-x;
 }
 
 #right_nav ul li.bottom
@@ -754,7 +747,7 @@ a#callToAction:hover
 #right_nav ul li a, #right_nav ul li a:link, #right_nav ul li a:visited
 {
 	padding-left: 20px;
-	background: url(     "original/bullet_arrow.gif" ) left no-repeat;
+	background: url(      "original/bullet_arrow.gif" ) left no-repeat;
 }
 
 
@@ -768,7 +761,7 @@ a#getStartedInt, a#getStartedInt:link, a#getStartedInt:visited
 	padding: 42px 0 0 0;
 	margin: 0 0 15px 0;
 	overflow: hidden;
-	background-image: url(     "original/btn_getstarted.gif" );
+	background-image: url(      "original/btn_getstarted.gif" );
 	background-position: 0 0;
 }
 
@@ -809,7 +802,7 @@ a#getStartedInt:hover
 	padding: 0;
 	line-height: 19px;
 	height: 19px;
-	list-style-image: url(  'original/bullet_arrow.gif' );
+	list-style-image: url(   'original/bullet_arrow.gif' );
 }
 
 
@@ -955,17 +948,17 @@ ul.formList li.submit a:hover
 
 ul.formList li.submit a.green
 {
-	background-image: url(     "original/btn_submitg.gif" );
+	background-image: url(      "original/btn_submitg.gif" );
 }
 
 ul.formList li.submit a.blue
 {
-	background-image: url(     "original/btn_submitb.gif" );
+	background-image: url(      "original/btn_submitb.gif" );
 }
 
 ul.formList li.submit a.step2
 {
-	background-image: url(     "original/btn_step2of2.gif" );
+	background-image: url(      "original/btn_step2of2.gif" );
 }
 
 
@@ -1064,7 +1057,7 @@ ul.formList li.submit a.step2
 #project_navigation
 {
 	position: relative;
-	background: url(     "original/back_case_project_top.gif" ) top left no-repeat;
+	background: url(      "original/back_case_project_top.gif" ) top left no-repeat;
 	overflow: hidden;
 	width: 346px;
 	height: 41px;
@@ -1237,7 +1230,7 @@ a#carbonNeutralBtn, a#carbonNeutralBtn:link, a#carbonNeutralBtn:visited
 	overflow: hidden;
 	margin: 55px auto 10px auto;
 	line-height: 29px;
-	background-image: url(     "original/btn_carbonneutral.gif" );
+	background-image: url(      "original/btn_carbonneutral.gif" );
 	background-position: 0 0;
 }
 
@@ -1295,12 +1288,7 @@ a#carbonNeutralBtn:hover
 /* Visual Element Styling */
 /* Reference "structural.css" for site layout styling */
 
-body
-{
-	background: white url( "files/background.gif" ) top repeat-x #a59173;
-	font-size: 80%;
-	font-family: Tahoma, Arial, Helvetica, sans-serif;
-}
+
 
 a, a:link, a:visited
 {
@@ -1316,9 +1304,16 @@ a:hover
 
 #body
 {
-	font-size: .85em;
+	font-size: 12px;
 	color: #514e41;
-	line-height: 1.5em;
+	line-height: 15px;
+	position: relative;
+	width: 100%;
+	padding: 10px 0 10px 0;
+	z-index: 100;
+	clear: both;
+	background: url( "original/content_top.gif" ) left top no-repeat;
+	overflow: hidden;
 }
 
 ul#currentPosts
@@ -1339,7 +1334,7 @@ ul#currentPosts li
 {
 	font: normal 2em "Trebuchet MS" , Arial, Helvetica, sans-serif;
 	line-height: 42px;
-	background: url( "../images/dots.gif" ) bottom repeat-x;
+	background: url(  "../images/dots.gif" ) bottom repeat-x;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 }
@@ -1365,7 +1360,7 @@ ul#currentPosts li
 	margin: 10px 0 10px 0;
 	padding: 10px 0 10px 0;
 	font: normal 1.2em "Trebuchet MS" , Arial, Helvetica, sans-serif;
-	background: url( "../images/dots.gif" ) left bottom repeat-x;
+	background: url(  "../images/dots.gif" ) left bottom repeat-x;
 	font-weight: bold;
 }
 
@@ -1441,19 +1436,19 @@ ul#currentPosts li
 }
 ul.build li, li.build
 {
-	list-style-image: url( "../images/bullet_build.gif" );
+	list-style-image: url(  "../images/bullet_build.gif" );
 }
 ul.market li, li.market
 {
-	list-style-image: url( "../images/bullet_market.gif" );
+	list-style-image: url(  "../images/bullet_market.gif" );
 }
 ul.grow li, li.grow
 {
-	list-style-image: url( "../images/bullet_grow.gif" );
+	list-style-image: url(  "../images/bullet_grow.gif" );
 }
 ul.multiple li, li.multiple
 {
-	list-style-image: url( "../images/bullet_multiple.gif" );
+	list-style-image: url(  "../images/bullet_multiple.gif" );
 }
 
 div.popUp
@@ -1503,7 +1498,7 @@ div.popUp a:hover
 {
 	font-size: 11px;
 	color: #666666;
-	background: url( "../images/footer_back.gif" ) left top no-repeat;
+	background: url(  "../images/footer_back.gif" ) left top no-repeat;
 }
 #footer a, #footer a:link, #footer a:visited
 {
