@@ -39,9 +39,19 @@ namespace JayahoIndia
         {
             int value=0;
             JayahoIndiaDataSetTableAdapters.PinSalesTableAdapter objpinsales = new JayahoIndia.JayahoIndiaDataSetTableAdapters.PinSalesTableAdapter();
-            JayahoIndiaDataSet.PinSalesDataTable i = objpinsales.GetData(Convert.ToInt32(tbPinCount.Text), tbUserName.Text, tbCustName.Text, tbEmailId.Text, tbPhoneNumber.Text, tbAddress.Text, tbPaymentMode.Text, tbReferenceNumber.Text, tbBankTransactionNumber.Text, Convert.ToDecimal(tbAmountPaid.Text), new Guid("f3f8c1ae-a748-4810-bf79-c71841cd3cc1"));
+            JayahoIndiaDataSet.PinSalesDataTable i = objpinsales.GetData(Convert.ToInt32(tbPinCount.Text), 
+                tbUserName.Text,
+                tbCustName.Text,
+                tbEmailId.Text, 
+                tbPhoneNumber.Text,
+                tbAddress.Text, 
+                tbPaymentMode.Text,
+                tbReferenceNumber.Text,
+                tbBankTransactionNumber.Text,
+                Convert.ToDecimal(tbAmountPaid.Text),
+                new Guid("00000000-0000-0000-0000-000000000000"));
 
-            if (i.Columns.Count == 1) MessageBox.Show("Please Ask Administrator To Generate Pins");
+            if (i.Rows.Count == 1 && i.Rows[0][0].ToString() == "00000000-0000-0000-0000-000000000000") MessageBox.Show("Please Ask Administrator To Generate Pins");
             else
             {
                 MessageBox.Show("Pins Successfully Activated");
