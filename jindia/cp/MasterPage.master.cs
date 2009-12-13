@@ -14,6 +14,7 @@ namespace JayahoIndia
 
                 UserData ud =(UserData) Session["userdata"];
                 lblName.Text = ud.Name;
+                hlTreeView.NavigateUrl = "TreeView.aspx?ID="+ud.UserId;
             }
         }
         protected void lbLogout_Click(object sender, EventArgs e)
