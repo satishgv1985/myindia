@@ -26,7 +26,7 @@ namespace JayahoIndia
 
         private void ActivatedPins_Load(object sender, EventArgs e)
         {
-            populateDataGrid.Columns.RemoveAt(0);
+            //populateDataGrid.Columns.RemoveAt(0);
             dataGridView1.DataSource = populateDataGrid;
             
         }

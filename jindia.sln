@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\jindia\", "jindia", "{8E6E10E1-0A9C-47B8-A561-F111F8EF20F1}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\jindia\", "jindia\", "{8E6E10E1-0A9C-47B8-A561-F111F8EF20F1}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.VirtualPath = "/jindia"
 		Debug.AspNetCompiler.PhysicalPath = "E:\myindia\jindia\"
@@ -20,7 +20,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\jindia\", "jindia", 
 		VWDPort = "2230"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JayahoIndia", "..\myindia\JayahoIndiaAdmin\JayahoIndia.csproj", "{EF9437F8-82BA-420B-8DAB-EDCA09771AFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JayahoIndia", "JayahoIndiaAdmin\JayahoIndia.csproj", "{EF9437F8-82BA-420B-8DAB-EDCA09771AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

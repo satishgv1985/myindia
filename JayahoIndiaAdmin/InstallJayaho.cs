@@ -149,7 +149,7 @@ namespace JayahoIndia
                 objpta.Insert(i11);               
                 //insert one employee
                 jispInsertEmployeeTableAdapter objInsertEmployee = new jispInsertEmployeeTableAdapter();
-                Guid objGuid = new Guid();
+                Guid objGuid = Guid.NewGuid();
                 objInsertEmployee.Insert(objGuid, "admin", "admin", 1, "admin");
                 //sell that pin through that employee
                 JayahoIndiaDataSetTableAdapters.PinSalesTableAdapter objpinsales = new JayahoIndia.JayahoIndiaDataSetTableAdapters.PinSalesTableAdapter();
