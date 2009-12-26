@@ -10886,11 +10886,6 @@ SELECT Tax_Id, Tax_Name, Tax_Value FROM Tax WHERE (Tax_Id = @Tax_Id)";
                 }
             }
         }
-
-        internal JayahoIndiaDataSet.UpdateUserDetailsDataTable Update(string p, string p_2, System.Windows.Forms.TextBox textBoxAddress, string p_4, string p_5, string p_6, string p_7, string p_8, string p_9, string p_10, string p_11, System.DateTime dateTime, object p_13, object p_14, object p_15, object p_16, object p_17, object p_18, object p_19)
-        {
-            throw new System.Exception("The method or operation is not implemented.");
-        }
     }
     
     /// <summary>

@@ -17,9 +17,16 @@ public partial class SendSMS : System.Web.UI.Page
     }
     protected void lbSubmit_Click(object sender, EventArgs e)
     {
-        JayahoIndiaDSTableAdapters.QueriesTableAdapter queryTA = new JayahoIndiaDSTableAdapters.QueriesTableAdapter();
-        Object obj=queryTA.jispUserSMSUpdation(new Guid(Convert.ToString(Session["userid"])), tbMobileNumber.Text, tbTextMessage.Text);
+            //when user clicks this button user 
+            // check how many messages are remaining for that day
+            // if less than the limit then display a message that exceeded the limit
+            //
+        SendMessage objSendMessage = new SendMessage();
+        string sentStatus =  objSendMessage.Send(tbTextMessage.Text, tbMobileNumber.Text, Convert.ToString(Session["userid"]));
+
+       
         lblMessage.Visible = true;
+        lblMessage.Text = sentStatus;
         tbMobileNumber.Text = "";
         tbTextMessage.Text = "";
     }
