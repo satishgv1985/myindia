@@ -24,7 +24,7 @@ namespace JayahoIndia
         {
             JayahoIndiaDataSetTableAdapters.InsertUserTableAdapter objInsertUser = new JayahoIndiaDataSetTableAdapters.InsertUserTableAdapter();
 
-            JayahoIndiaDataSet.InertUserDataTable objiu = objInsertUser.GetData(new Guid(textBoxUserPin.Text), textBoxusername.Text, textBoxParentUsername.Text, comboBoxJoinAt.SelectedItem.ToString(), "password", textBoxusername.Text, "Bangalore", "AP", "", "Atp", "560078", "9986430161", "dmnreddy@gmail.com", "test relation", "brother", "pet name", "dog");
+            JayahoIndiaDataSet.InsertUserDataTable  objiu = objInsertUser.GetData(new Guid(textBoxUserPin.Text), textBoxusername.Text, textBoxParentUsername.Text, comboBoxJoinAt.SelectedItem.ToString(), "password", textBoxusername.Text, "Bangalore", "AP", "", "Atp", "560078", "9986430161", "dmnreddy@gmail.com", "test relation", "brother", "pet name", "dog");
                   
             MessageBox.Show(Convert.ToString(objiu.Rows[0][0]));
         }
