@@ -8,7 +8,9 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Text;
-
+using System.Configuration;
+using System.Net;
+using System.IO;
 /// <summary>
 /// Summary description for SendMessage
 /// </summary>
@@ -60,9 +62,9 @@ public class SendMessage
         }
         catch (Exception e)
         {
-            result = "Sent Failed";
+           // return "Sent Failed";
         }
-        return result;
+        return "Sent Failed";
     }
 
     private string ProcessResponse(string responseString)
