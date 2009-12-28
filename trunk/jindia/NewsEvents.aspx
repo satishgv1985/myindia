@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="NewsEvents.aspx.cs" Inherits="NewsEvents" Title="Untitled Page" %>
+    CodeFile="NewsEvents.aspx.cs" Inherits="NewsEvents" Title="News and Events - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div style="padding-left: 15px;">

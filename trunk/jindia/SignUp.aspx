@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="SignUp.aspx.cs" Inherits="SignUp" Title="Jayaho India - Register Here" %>
+    CodeFile="SignUp.aspx.cs" Inherits="SignUp" Title="Register Here - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px; width: 95%">

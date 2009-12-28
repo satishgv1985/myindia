@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Sitemap.aspx.cs" Inherits="Sitemap" Title="Jayaho India - Sitemap" %>
+    CodeFile="Sitemap.aspx.cs" Inherits="Sitemap" Title="Site Map - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table cellpadding="0" cellspacing="0" border="0" class="text" style="margin-left: 15px;"

@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Products.aspx.cs" Inherits="Products" Title="Jayaho India - Products - Computer to Mobile Messaging solution" %>
+    CodeFile="Products.aspx.cs" Inherits="Products" Title="Products - Computer to Mobile Messaging solution in JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table cellspacing="0" cellpadding="0" class="text" style="margin-left: 15px;" width="96%">

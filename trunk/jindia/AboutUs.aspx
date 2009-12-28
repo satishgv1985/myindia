@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="AboutUs.aspx.cs" Inherits="AboutUs" Title="Jayaho India - About Us" %>
+    CodeFile="AboutUs.aspx.cs" Inherits="AboutUs" Title="About Us - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px;" width="96%">
@@ -9,7 +9,7 @@
         </tr>
         <tr>
             <td style="vertical-align:text-top;">
-                Jayho India is a Indian based SMS Marketing company established in 2009.
+                Jayaho India is an Indian based SMS Marketing company established in 2009.
                 With growing mobile usage by the people daily, it has become common a mobile in every persons hand.
                 SMS(Small Message Service) sent lives long than a phone call. Now-a-days sending SMS is quite common 
                 and has become cheap. It helps to keep in touch with friends and family.

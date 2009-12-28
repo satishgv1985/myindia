@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Default.aspx.cs" Inherits="_Default" Title="Jayaho India - Home" %>
+    CodeFile="Default.aspx.cs" Inherits="_Default" Title="JayahoIndia - Home" %>
 <%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
  <%--   <table cellpadding="0" cellspacing="0" border="0">
@@ -109,8 +109,7 @@
                             <h3 style="background-image: url('original/h3_back.gif');">
                                 News</h3>
                             <p class="style9" align="left">
-                                <span class="style14">10 September 2009:</span> JayahoInida has become a part of so and
-                                so Group and now an <strong>so and so Company</strong></p>
+                                <span class="style14">10 September 2009:</span> New revamped site of JayahoIndia launched. Product is added</p>
                             <p align="left">
                                 <span class="style10"><span class="style14">20 September 2009:</span> We've extended our
                                     softwares line; Our products are <strong>Mobile Add</strong>, <strong>sample text </strong>
@@ -136,7 +135,7 @@
                                         <br>
                                         Its efficient and professional..."</span></p>
                                 <p class="style3">
-                                    <strong>Name<br>
+                                    <strong>Satish<br>
                                         (Member)</strong></p>
                                 <%--<p class="style3">
                                     <a href="customers.htm">More Testimonials »</a></p>--%>

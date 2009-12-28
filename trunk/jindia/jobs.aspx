@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="jobs.aspx.cs" Inherits="jobs" Title="Jayaho India - Jobs" %>
+    CodeFile="jobs.aspx.cs" Inherits="jobs" Title="Jobs - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table class="text" style="margin-left: 15px;" width="60%">
