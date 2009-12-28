@@ -1,12 +1,12 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" Title="Jayaho India - Contact Us" %>
+    CodeFile="ContactUs.aspx.cs" Inherits="ContactUs" Title="Contact Us - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px; width: 95%">
         <tr>
             <td style="text-align: center;">
                 <asp:Label Font-Bold="true" ForeColor="BlueViolet" ID="lblMessage" runat="server"
-                    Visible="false" Text="!Mail Sent Successfully. You will get a reply soon."></asp:Label>
+                    Visible="false" Text="!Mail Sent Successfully. We will contact you soon."></asp:Label>
             </td>
         </tr>
         <tr>
@@ -75,7 +75,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Your Email:</td>
+                                        Your Email Id:</td>
                                     <td>
                                         <asp:TextBox ID="tbYourEmail" runat="server" MaxLength="50"></asp:TextBox>
                                         <asp:RegularExpressionValidator ID="revYourEmail" runat="server" ControlToValidate="tbYourEmail"

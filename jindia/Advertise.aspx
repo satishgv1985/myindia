@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Advertise.aspx.cs" Inherits="Advertise" Title="Jayaho India - Advertise with Us" %>
+    CodeFile="Advertise.aspx.cs" Inherits="Advertise" Title="Advertise with Us - JayahoIndia" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <table style="margin-left: 15px;" width="96%">
@@ -25,7 +25,7 @@
                                     <li>Send SMS our registered users as per your budget</li><li>Start getting response
                                         within a few hours or even minutes</li></ul>
                                 <div>
-                                    So, what are you waiting for? <a class="style111" href="Advertiser.aspx">Join Now! Its
+                                    So, what are you waiting for? <a class="style111" href="ContactUs.aspx">Mail Now! Its
                                         Free</a></div>
                             </td>
                         </tr>

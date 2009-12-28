@@ -35,15 +35,20 @@
         <tr>
             <td>
                 <asp:LinkButton ID="lbLogin" runat="server" CssClass="loginbutton" Width="70px" Text="Login"
-                    OnClick="lbLogin_Click" CausesValidation="true"></asp:LinkButton>
+                    OnClick="lbLogin_Click" CausesValidation="true" ForeColor="white"></asp:LinkButton>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:LinkButton ID="lbForgotPassword" runat="server" PostBackUrl="~/ForgotPassword.aspx"
-                    CssClass="normalText" Text="ForgotPassword" CausesValidation="false"></asp:LinkButton><br />
-                <asp:LinkButton ID="lbNewUserSignUp" runat="server" PostBackUrl="~/SignUp.aspx" CssClass="normalText"
-                    Text="NewUser. Sign Up Now" CausesValidation="false"></asp:LinkButton>
+                <asp:HyperLink ID="hlForgotPassword" runat="server" NavigateUrl="~/ForgotPassword.aspx"
+                    Text="Forgot Password" CssClass="normalText"></asp:HyperLink>
+                <%--<asp:LinkButton ID="lbForgotPassword" runat="server" PostBackUrl="~/ForgotPassword.aspx"
+                    CssClass="normalText" Text="ForgotPassword" CausesValidation="false"></asp:LinkButton>--%>
+                <br />
+                <asp:HyperLink ID="hlNewUserSignUp" runat="server" NavigateUrl="~/SignUp.aspx" Text="NewUser. Sign Up Now"
+                    CssClass="normalText"></asp:HyperLink>
+                <%--<asp:LinkButton ID="lbNewUserSignUp" runat="server" PostBackUrl="~/SignUp.aspx" CssClass="normalText"
+                    Text="NewUser. Sign Up Now" CausesValidation="false"></asp:LinkButton>--%>
             </td>
         </tr>
     </table>

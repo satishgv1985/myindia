@@ -58,6 +58,7 @@ public class SendMessage
             {
                 JayahoIndiaDSTableAdapters.QueriesTableAdapter queryTA = new JayahoIndiaDSTableAdapters.QueriesTableAdapter();
                 Object obj = queryTA.jispUserSMSUpdation(new Guid(userId), mobileNumber+"|"+MessageGUID, message);
+                return result;
             }
         }
         catch (Exception e)

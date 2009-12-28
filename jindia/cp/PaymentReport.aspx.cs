@@ -8,11 +8,21 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
+using JayahoIndia;
+
 
 public partial class PaymentReport : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (!IsPostBack)
+        {
+            UserData ud = (UserData)Session["userdata"];
+            JayahoIndiaDSTableAdapters.PaymentReportTableAdapter prTA = new JayahoIndiaDSTableAdapters.PaymentReportTableAdapter();
+            JayahoIndiaDS.PaymentReportDataTable objPaymentReport = prTA.GetData(new Guid(ud.UserId));
+            dgPaymentReport.DataSource = objPaymentReport;
+            dgPaymentReport.DataBind();
+        }
     }
 }
+

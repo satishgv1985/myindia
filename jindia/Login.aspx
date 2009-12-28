@@ -1,5 +1,5 @@
 <%@ Page Language="C#" MasterPageFile="~/MainSite.master" AutoEventWireup="true"
-    CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Jayaho India - Login" %>
+    CodeFile="Login.aspx.cs" Inherits="JayahoIndia.Login" Title="Login - JayahoIndia" %>
 
 <%@ Register TagName="LeftColumn" TagPrefix="uc" Src="~/userControls/LeftColumn.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">

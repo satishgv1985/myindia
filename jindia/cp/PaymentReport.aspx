@@ -1,14 +1,13 @@
 <%@ Page Language="C#" MasterPageFile="~/cp/MasterPage.master" AutoEventWireup="true"
-    CodeFile="PaymentReport.aspx.cs" Inherits="PaymentReport" Title="Untitled Page" %>
+    CodeFile="PaymentReport.aspx.cs" Inherits="PaymentReport" Title="Payment Report" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="mainContentPlaceHolder" runat="Server">
     <table width="100%" class="text">
-        <tbody>
-            <tr>
-                <td colspan="2">
-                    <strong><b><span class="textblack">Payment Report</span></b></strong></td>
-            </tr>
-            <tr>
+        <tr>
+            <td colspan="2">
+                <strong><b><span class="textblack">Payment Report</span></b></strong></td>
+        </tr>
+        <%--<tr>
                 <td>
                     <strong>Select Type : </strong>
                     <select id="ctl00_ContentPlaceHolder1_Paymentsearch1_ddtype" name="ctl00$ContentPlaceHolder1$Paymentsearch1$ddtype">
@@ -21,28 +20,27 @@
                 </td>
                 <td>
                 </td>
-            </tr>
-            <tr>
-                <td align="left" colspan="5">
-                    <strong><b></b></strong>
-                    <hr />
-                    <strong><b><span style="color: Red; font-weight: bold; position: relative;" id="ctl00_ContentPlaceHolder1_Paymentsearch1_lblmsg" />
-                    </b></strong>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>Total No Of pairs : <span id="ctl00_ContentPlaceHolder1_Paymentsearch1_lbltotpair">
-                        32</span></strong>
-                </td>
-                <td>
-                    <strong>Total Amount : <span id="ctl00_ContentPlaceHolder1_Paymentsearch1_lblamt">32000</span></strong>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <div>
-                        <table rules="all" cellspacing="0" cellpadding="2" border="1" align="center" style="font-family: Verdana;
+            </tr>--%>
+        <tr>
+            <td colspan="2">
+                <strong><b></b></strong>
+                <hr />
+                <strong><b><span style="color: Red; font-weight: bold; position: relative;" id="ctl00_ContentPlaceHolder1_Paymentsearch1_lblmsg" />
+                </b></strong>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Total No Of pairs : <span id="ctl00_ContentPlaceHolder1_Paymentsearch1_lbltotpair">
+                    32</span></strong>
+            </td>
+            <td>
+                <strong>Total Amount : <span>32000</span></strong>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <%-- <table rules="all" cellspacing="0" cellpadding="2" border="1" align="center" style="font-family: Verdana;
                             font-size: 6pt; width: 100%; border-collapse: collapse;" id="ctl00_ContentPlaceHolder1_Paymentsearch1_gridmember">
                             <tbody>
                                 <tr align="center" style="color: White; background-color: rgb(64, 149, 66); font-weight: bold;
@@ -331,10 +329,13 @@
                                     </td>
                                 </tr>
                             </tbody>
-                        </table>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
+                        </table>--%>
+                <asp:DataGrid ID="dgPaymentReport" runat="server" AutoGenerateColumns="true" AllowPaging="false"
+                    AllowSorting="false" Width="100%" CellPadding="8" CellSpacing="0">
+                    <Columns>
+                    </Columns>
+                </asp:DataGrid>
+            </td>
+        </tr>
     </table>
 </asp:Content>
