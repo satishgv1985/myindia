@@ -65,7 +65,7 @@ public class SendMessage
         {
            // return "Sent Failed";
         }
-        return "Sent Failed";
+        return "Sending Failed";
     }
 
     private string ProcessResponse(string responseString)
