@@ -30,7 +30,7 @@
   <ItemGroup>
     <Reference Include="BSE.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Documents and Settings\Admin\Desktop\AtpHousingLoan\AtpHousingLoan\bin\Debug\BSE.Windows.Forms.dll</HintPath>
+      <HintPath>dlls\BSE.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -204,6 +204,9 @@
     <Compile Include="ViewActivationDetails.Designer.cs">
       <DependentUpon>ViewActivationDetails.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dlls\BSE.Windows.Forms.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
