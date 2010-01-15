@@ -113,7 +113,8 @@ namespace JayahoIndia
 
         private string getDispatchStatus()
         {
-            switch (comboBoxCourierDetails.SelectedItem.ToString())
+            
+            switch (Convert.ToString(dispatchStatus.SelectedText))
             {
 
                 case "Pending":
