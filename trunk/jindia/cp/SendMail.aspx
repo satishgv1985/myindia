@@ -79,7 +79,7 @@
                 <td style="height: 24px;">
                     Your Email Id</td>
                 <td align="left" style="height: 24px;">
-                    <asp:TextBox ID="tbEmailId" Text="youremailid@gmail.com" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbEmailId" Text="youremailid@mailserver.com" runat="server"></asp:TextBox>
                     <asp:RegularExpressionValidator ID="revYourEmail" runat="server" ControlToValidate="tbEmailId"
                                             ErrorMessage="Please Enter Valid Email Id" SetFocusOnError="true" ValidationExpression="^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"></asp:RegularExpressionValidator>
                                         <asp:RequiredFieldValidator ID="rfvYourEmail" runat="server" ControlToValidate="tbEmailId"
@@ -95,7 +95,7 @@
                 <td>
                     Contact No</td>
                 <td align="left">
-                    <asp:TextBox ID="tbContactNo" Text="9342829902" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbContactNo" Text="" runat="server"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvPhoneNo" runat="server" ControlToValidate="tbContactNo"
                                             ForeColor="red" ErrorMessage="Please Enter Phone No"></asp:RequiredFieldValidator>
                                             

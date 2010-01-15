@@ -31,11 +31,10 @@
         </tr>
         <tr>
             <td>
-                <strong>Total No Of pairs : <span id="ctl00_ContentPlaceHolder1_Paymentsearch1_lbltotpair">
-                    32</span></strong>
+                <strong>Total No Of Levels : </strong>  <%=LevelCount() %>
             </td>
             <td>
-                <strong>Total Amount : <span>32000</span></strong>
+                <strong>Binary Amount Earned:</strong> Rs:<%=AmountEarned() %>/-
             </td>
         </tr>
         <tr>
